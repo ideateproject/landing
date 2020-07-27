@@ -1,0 +1,132 @@
+.footer{
+  background-color: #242456; /* For browsers that do not support gradients */
+  /* background-image: linear-gradient(white, #242456); /* Standard syntax (must be last) */
+  color: white;
+  height: 125px;
+  /* max-height: 150px;  June 20 */
+  min-height: 75px;
+  width: 100%;
+  /* border-top: 2px solid #242456; June 20 */
+  /* display: inline-block; */
+  padding-top: 10px;
+  padding-bottom:20px;
+  float:none;
+}
+
+body {
+  background-image: url('Images/tiles.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+  background: url('Images/tiles.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+}
+.first_slide{
+  color: black;
+}
+#first_slide{
+  display: none;
+}
+#second_slide{
+  display: none;
+}
+@media only screen and (max-width: 645px) {
+  div.column {
+    display: none;
+ }
+  #dropdown{
+    display:block;
+    float: right;
+  }
+  .motivationalcontent{
+    width: 50%;
+    float: left;
+    margin-left: 0px;
+    float: center;
+  }
+  .businessFooter{
+    height: auto;
+    /* max-height: 250px; June 20 */
+  }
+}
+
+p{
+  font-size: 25px;
+  color: #242456;
+}
+
+h1{
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  display: inline;
+  padding-top: 50px;
+}
+strong{
+  /* color: #a3c1d4; */
+  color: #f7931e;
+}
+
+h2{
+  font-size: 50px;
+  color: #242456;
+  font-family: 'Lato', sans-serif;
+}
+h3{
+  font-size: 30px;
+  color: #242456;
+}
+.footer h3{
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  display: inline;
+  padding-top: 80px;
+}
+h4{
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  display: inline;
+  padding-top: 80px;
+}
+.footer h1:hover, .footer h2:hover, .footer h4:hover{
+  color: rgba(245, 172, 64);
+}
+.motivationalcontent{
+  margin-left: 10%;
+  float: left;
+  max-width: 170px;
+  /* max-height: 80px; June 20 */
+}
+.footerdescription{
+  max-width: 170px;
+  max-height: 170px;
+
+  /* max-height: 50px; June 20 */
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.wrapper{
+  position: relative; /*used to be absolute??*/
+  top:0;
+  max-width: 15000px;
+  float:none;
+}
+.column{
+  display: inline-flex;
+  width: 10%;
+  padding: 5px;
+  height: auto;
+  /* max-height: 100px; June 20 */
+  margin-left: 5%;
+  margin-right: auto;
+  margin-bottom: auto;
+  text-align: left; /*center june 20*/
+  line-height: 1.2;
+  top: 0;
+}
