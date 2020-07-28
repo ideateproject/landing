@@ -1,0 +1,524 @@
+body {
+  font-family: 'Nobile';font-size: 22px;
+  font-family: 'Corben:bold';font-size: 22px;
+  background: url(/Users/jd/Downloads/cream_dust) repeat 0 0;
+  box-sizing: border-box;
+}
+
+:target:before {
+content:"";
+display:block;
+height:100px; /* fixed header height*/
+margin:-100px 0 0; /* negative fixed header height */
+}
+img{
+  pointer-events: none; /*for team page only*/
+}
+.jobbar a{
+  color: black;
+}
+.jobbox{
+  max-width: 215px;
+  height:auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+button {
+  background-color: #dddddd;
+  color: #000000;
+  min-width: 100px;
+  height: 50px;
+  border: none;  /* 1px solid grey; */
+  box-shadow: 0px 0px 8px 0px rgba(38, 38, 38, 0.2);
+}
+button :hover{
+  background-color: #c8c8c8;
+}
+.infobox{
+  width: 30%;
+  /* margin: 50px 0px; */
+  top:100px;
+  max-height: 450px;
+
+  height: auto;
+  /* float: right; */
+  background-color: white;
+  /* margin-top: 70px; */
+  /* top: 170px; */
+  top: 100px;
+  position:sticky;
+  /* margin-left: /*10px; 110%;/* worked great*/
+  padding: 20px;
+  /* border: 3px solid rgba(37, 37, 88); */
+  overflow: scroll;
+  width: 60%;
+  /* float:right; */
+  max-height: 500px;
+  max-width: 40%;
+}
+.morearticles{
+  min-height: 100px;
+  width: 100%;
+  background-color: ghostwhite;
+  margin: 10px 0px;
+  border: 3px solid rgba(37, 37, 88);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+header{
+  /* position: relative; */
+  width: 100%;
+  margin-top: 0px;
+  /* max-height: 250px; */
+  background-color: rgba(204, 204, 204, 0.21);
+  color: rgba(255, 255, 255, .01);
+  z-index: 1;
+  margin-bottom: 0px;
+  text-align: left;
+  border-bottom: 2px solid white; /*rgba(37, 37, 88); */
+  height: 90px;
+}
+
+.box{
+  width: 220px;
+  height: 220px;
+  background-color: blue;
+  color: green;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  border: 5px solid black;
+}
+#grad1 {
+  /* offsetTop: 10; */
+  height: 100px;
+  background-color: ghostwhite; /* For browsers that do not support gradients */
+  /* background-image: linear-gradient(white, ghostwhite); /* Standard syntax (must be last) */ */
+}
+#grad2 {
+  height: 220px;
+  background-color: ghostwhite; /* For browsers that do not support gradients */
+  background-image: linear-gradient(white, ghostwhite); /* Standard syntax (must be last) */
+}
+/* .featutedcontent{
+  height: 200px;
+  width: 100%;
+} */
+div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  height: 220px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  border: 3px solid white; /*#242456;*/
+}
+/* div.scrollmenu:hover{
+  background-color: red;
+} */
+
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  width: 220px;
+  height: auto; /*used to be 170, + 50 = 220*/
+  /* padding-top: 50px; */
+  /* outline: solid; */
+  overflow: hidden; /*added from hover doc*/
+  position: relative; /*added from hover doc*/
+/*
+  background-image: Url('/Users/jd/Downloads/Mountains.jpg'); */
+}
+
+div.scrollmenu a:hover{
+  background-color: lightgray;/*#777;*/
+  Color: transparent;
+  background-image: none;
+  /* font-size: 0px; should stay commented out*/
+  /* padding-bottom: ^^50px; */
+  /* color: none; ^^*/
+}
+div.scrollmenu .description:hover{
+  color: red;
+}
+
+.best-practices{
+  float: left;
+  width: 100%;
+  height: 220px;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  background-color: rgba(37, 37, 88);
+  border-radius: 25px;
+  text-align: left;
+  opacity: 1;
+}
+
+section{
+  margin-top: 60px;
+}
+.section1{
+  margin-top: 0px;
+  background-color: rgba(37, 37, 88, 0);
+  height: 240px;
+  border-radius: 25px;
+  top: 80px;
+  position: relative;
+}
+.section2{
+  /* margin-top: 100px; */
+  /* margin-bottom: 50px; */
+  width: 100%;
+}
+.section3{
+  margin-top: 20px; /*not used*/
+}
+
+.podcastcontent{
+  float: right;
+  width: 444px;
+  height: 220px;
+  /* padding: 0px 1px; */
+  margin-left: auto;
+  margin-right: 17px;
+  margin-top: 300px;
+  margin-bottom: 0px;
+  background-color: grey;
+  opacity: 100%;
+  border-radius: 0px 25px 25px 0px;
+  outline-color: rgba(37, 37, 88);
+  border: 3px solid rgba(37, 37, 88);
+}
+.wordcontent{
+  float: left;
+  width: 444px;
+  height: 220px;
+  /* padding: 0px 1px; */
+  margin-left: 17px;
+  margin-right: auto;
+  margin-top: 300px;
+  margin-bottom: 0px;
+  background-color: grey;
+  text-align: left;
+  opacity: 100%;
+  /*outline: solid;
+  outline-width: medium;
+  outline-color: rgba(37, 37, 88);*/
+  border: 3px solid rgba(37, 37, 88);
+  border-radius: 25px 0px 0px 25px;
+}
+.podcastcontent:hover{
+  opacity: 50%;
+}
+.wordcontent:hover{
+  opacity: 50%;
+}
+div.description{
+  color: red;
+  display: none;
+}
+div.description:hover{
+  display: block;
+  color: white;
+}
+.title{
+  margin-top: 20px;
+  padding-top: 0px;
+  /* margin-bottom: 50px;
+  padding-bottom: 50px;  */
+}
+
+.maincolumn{
+  /* margin-left:100px; */
+  /* margin-right:100px; */
+  /* background-color: rgba(196,196,196,.25); */
+  text-align: center;
+  position: relative; /*absolute*/
+  bottom: 0; top:64; left: 250; right: 250;
+  height: 100%;
+  width: 75%;
+  text-align: left;
+  padding: 10px;
+  padding-top: 0px;
+  /* max-width: 975px; */
+  display: flex;
+  /* z-index: 0; */
+  /* margin-top: 100px; */
+}
+.articlespace{
+  width: 100%;
+  margin: 0px;
+}
+img{
+  width:
+}
+li {
+  /* background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-2.2 -2.4 4 4'><circle r='1' /></svg>") no-repeat left 5px; */
+  font-size: 44px;
+}
+li :before{
+  font-size: 20px;
+}
+.listing {
+  list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='-2.2 -2.4 4 4'><circle r='1' /></svg>");
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: rgba(37, 37, 88);
+  line-height: 1.8;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+/*
+.pquote {
+  font-family: verdana;
+  font-size: 15px;
+  color: black;
+  line-height: 1.2;
+}
+h2 {
+  color: transparent;
+  text-align: right;
+  font-size: 15px;
+
+}
+h1 {
+  color: rgba(37, 37, 88);
+  text-align: center;
+  font-size: 60px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -65px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+
+}*/
+h2 {
+  color:#c27109;
+  font-size: 44px;
+}
+h3 {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  /* padding: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+
+}/*
+h4 {
+  font-family: verdana;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+
+  align-items: center;
+} */
+
+/* .h5{
+  color: rgba(37, 37, 88 );
+  font-family: 'Staatliches';
+} */
+h5{
+  font-size: 75px;
+}
+h4 {
+  color: #a3c1d4;
+  font-size: 100px;
+}
+
+.podcastlist{
+  float: right;
+  width: 28%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: 50px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  background-color: blue;
+  opacity: 100%;
+  border-radius: 25px;
+}
+
+.wordlist{
+  float: left;
+  width: 28%;
+  height: 28%;
+  padding: 5px;
+  margin-left: 50px;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  background-color: red;
+  text-align: left;
+  opacity: 100%;
+  border-radius: 25px;
+}
+.neptune-grid {
+    width: 1128px;
+    box-sizing: content-box;
+    padding: 0 30px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background-color: rgba(196,196,196,.25);
+}
+/* Style the navbar */
+#navbar {
+ /* overflow: hidden; */
+ background-color: #242456;
+ min-height: 180px;
+ height: auto;
+}
+#navbar_article {
+ /* overflow: hidden; */
+ background-color: rgba(255,255,255,.01);
+}
+#navbar_article a {
+ /* float: left; */
+ display: inline-block;
+ color: rgba(255,255,255,.01);
+ text-align: center;
+ align-items: center;
+ padding: 14px;
+ text-decoration: none;
+}
+/* Navbar links */
+#navbar a {
+ /* float: left; */
+ display: inline-block;
+ color: #f2f2f2;
+ text-align: center;
+ align-items: center;
+ padding: 14px;
+ text-decoration: none;
+}
+
+.dropbtn {
+  background-color: white;
+  color: grey;
+  /* padding: 16px; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  color: #242456;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: #242456;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.dropdown-content a:hover {color: white;
+   background-color: white;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   } /*#ddd*/
+
+.dropdown-content a {
+  color:grey;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  } /*#242456*/
+
+/* Page content */
+.content {
+ padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+ position: fixed;
+ top: 0;
+ width: 100%;
+}
+@media only screen and (max-width: 950px) {
+  #funding {
+    display: none;
+  }
+  #navbar{
+    font-size: 10px;
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #banners {
+    display: none;
+  }
+  #maincolumn{
+    display: none;
+  }
+  #navbar{
+    display: block;
+    height: 550px;
+  }
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+ padding-top: 50px;
+}
+.sticky + .maincolumn {
+ padding-top: 50px;
+}
+.sticky + .container-fluid {
+ padding-top: 50px;
+}
+.sticky + div {
+ padding-top: 50px;
+}
+.sticky + .jumbotron {
+ padding-top: 50px;
+}
+/* Title For Articles */
