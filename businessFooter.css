@@ -1,30 +1,24 @@
-.footer{
-  /* background-color: #242456; /* For browsers that do not support gradients */ */
+.businessfooter{
   /* background-image: linear-gradient(white, #242456); /* Standard syntax (must be last) */
-  color: #242456;
-  height: 125px;
+  background-color: white;
+  /* color: #242456; */
+  height: auto;
   /* max-height: 150px;  June 20 */
   min-height: 75px;
   width: 100%;
   /* border-top: 2px solid #242456; June 20 */
+  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   /* display: inline-block; */
   padding-top: 10px;
   padding-bottom:20px;
   float:none;
 }
-
-body {
-  /* background-image: url('Images/tiles.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
-  background: url('Images/tiles.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)); */
-}
-.first_slide{
-  color: black;
-}
-#first_slide{
+#dropdown{
   display: none;
-}
-#second_slide{
-  display: none;
+  width: 50%;
 }
 @media only screen and (max-width: 645px) {
   div.column {
@@ -45,57 +39,35 @@ body {
     /* max-height: 250px; June 20 */
   }
 }
-
-p{
-  font-size: 25px;
+.businessfooter a{
   color: #242456;
 }
-
-h1{
-  color: black;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
-  display: inline;
-  padding-top: 50px;
-}
-strong{
-  /* color: #a3c1d4; */
-  color: #f7931e;
-}
-
-h2{
-  font-size: 45px;
-  color: #242456;
-  font-family: 'Lato', sans-serif;
-}
-h3{
-  font-size: 30px;
-  color: #242456;
-}
-.footer h3{
+.businessfooter h1{
   color: white;
-  font-size: 14px;
-  font-weight: 700;
-  font-family: 'DM Sans', sans-serif;
-  display: inline;
-  padding-top: 80px;
+  font-size: 20px;
 }
-h4{
+.businessfooter h2{
   color: white;
+  font-size: 9px;
+}
+.businessfooter h3{
+  /* color: white;  June 20 */
+  color:#242424; /*june 20*/
   font-size: 14px;
   font-weight: 700;
   font-family: 'DM Sans', sans-serif;
-  display: inline;
-  padding-top: 80px;
-}
-h5{
-  font-size: 50px;
-  color: #fbb03b;
-  font-family: 'Lato', sans-serif;
-}
+  /* font-size: 13px; */
 
-.footer h1:hover, .footer h2:hover, .footer h4:hover{
+}
+.businessfooter h4{
+  /* color: white;  June 20 */
+  color:#ffab3e; /*june 20*/
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+  /* font-size: 8px; */
+}
+.businessfooter h1:hover, .businessfooter h2:hover, .businessfooter h4:hover{
   color: rgba(245, 172, 64);
 }
 .motivationalcontent{
@@ -104,10 +76,8 @@ h5{
   max-width: 170px;
   /* max-height: 80px; June 20 */
 }
-.footerdescription{
+.businessfooterdescription{
   max-width: 170px;
-  max-height: 170px;
-
   /* max-height: 50px; June 20 */
 }
 .vertical-center {
@@ -129,7 +99,7 @@ h5{
   padding: 5px;
   height: auto;
   /* max-height: 100px; June 20 */
-  margin-left: 5%;
+  margin-left: 2%;
   margin-right: auto;
   margin-bottom: auto;
   text-align: left; /*center june 20*/
