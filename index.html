@@ -23,17 +23,17 @@
 
 <header>
   <div id="header" class="row" style="max-width: 100%;">
-    <div class="col-sm-6">
-      <img class="mt-2 mx-4" src="Images/ideateLightbulb.svg" height="100px" alt="Ideate Logo">
-    </div>
-    <div class="col-sm-6">
-      <div class=" mt-4 container-fluid align-middle text-right">
+    <div class="col-sm-12 px-0">
+      <img id="smallLightbulb" style="float:left" class="mt-2 ml-4" src="Images/ideateLightbulb.svg" height="100px" alt="Ideate Logo">
+      <!-- </div>
+    <div class="col-sm-6"> -->
+      <div style="float:right;" class=" mt-4 align-middle text-right">
         <!-- <h1 class=" my-auto pl-3 pr-3">Home</h1> -->
         <!-- <h1 class=" my-auto pl-3 pr-3">Features</h1> -->
         <!-- <h1 class=" my-auto pl-3 pr-3">Resources</h1> -->
         <!-- <h1 class=" my-auto pl-3 pr-3">About</h1> -->
-        <button onclick="window.open('mailto:team@ideateproject.org', '_blank')" style="background-color: #1b1464; color:white; width: 200px" type="signUp" name="signUp" class="btn btn-lg pl-3 pr-3"> Contact Us </button>
-        <button onclick="window.open('http://beta.ideateproject.org', '_blank')" style="background-color: #1b1464; color:white; width: 200px" type="signUp" name="signUp" class="btn btn-lg pl-3 pr-3"> Sign Up </button>
+        <button id="contactUs" onclick="window.open('mailto:team@ideateproject.org', '_blank')" style="background-color: #1b1464; color:white; width: 200px" type="signUp" name="signUp" class="btn btn-lg pl-3 pr-3"> Contact Us </button>
+        <button id="signUp" onclick="window.open('https://beta.ideateproject.org/login', '_blank')" style="background-color: #1b1464; color:white; width: 200px" type="signUp" name="signUp" class="btn btn-lg pl-3 pr-3"> Sign Up </button>
       </div>
     </div>
   </div>
@@ -53,11 +53,11 @@
           <p class="my-3" style="color: black;">Ideate is the student entrepreneur's complete platform for networking, advising, and access to valuable resources.
           </p>
           <!-- <p>We are launching our beta platform in August. Sign up now to get on the waitlist and we will let you know if your university is chosen. If it is not, we will reach back out after our official release later this fall.</p> -->
-          <button onclick="window.location.href='http://beta.ideateproject.org';" style="background-color: #1b1464; color:white; width: 200px" type="signUp" name="signUp" class="btn btn-lg pl-3 pr-3"> Sign Up</button>
-          <button onclick="window.location.href='http://beta.ideateproject.org';" style="width: 200px; background-color: #fbb03b" type="signUp" name="signUp" class="btn btn-lg btn-warning pl-3 pr-3"> Log In </button>
+          <button onclick="window.open('https://beta.ideateproject.org/login', '_blank')" style="background-color: #1b1464; color:white; width: 200px" type="signUp" name="signUp" class="btn btn-lg pl-3 pr-3"> Sign Up</button>
+          <button onclick="window.open('https://beta.ideateproject.org/login', '_blank')" style="width: 200px; background-color: #fbb03b" type="signUp" name="signUp" class="btn btn-lg btn-warning pl-3 pr-3"> Log In </button>
         </div>
         <div class="col-sm-6">
-          <img src="Images/bigLightbulb.svg" width="500px" alt="Image 1">
+          <img id="bigLightbulb" src="Images/bigLightbulb.svg" style="max-width: 500px" alt="Image 1">
         </div>
       </div>
     </div>
@@ -214,7 +214,7 @@
           <div class="column" style="height: auto; top: 50%;width: 320px;">
             <div>
               <div class="businessfooterdescription" style="margin-top: -50px;">
-                <img src="Images/ideatelogo20.png" alt="Ideate Logo" style="top: 50%;width: 320px;">
+                <img src="Images/ideatelogo20.png" alt="Ideate Logo" style="top: 50%;max-width: 320px;">
               </div>
             </div>
           </div>
@@ -223,16 +223,16 @@
               <h3 style="padding: 0px 0px 10px 0px;">About</h3>
               <div class="businessfooterdescription">
                 <a href="mailto:team@ideateproject.org" target="_blank">
-                  <h4> Email </h4>
+                  <h4> Email </h4><br>
                 </a>
-                <a href="#">
+                <!-- <a href="#">
                   <h4> Phone </h4>
-                </a>
+                </a> -->
                 <a href="http://www.twitter.com/theideateproject" target="_blank">
-                  <h4> Twitter </h4>
+                  <h4> Twitter </h4><br>
                 </a>
                 <a href="http://www.instagram.com/theideateproject" target="_blank">
-                  <h4> Instagram </h4>
+                  <h4> Instagram </h4><br>
                 </a>
                 <a href="https://www.linkedin.com/company/the-ideate-project/" target="_blank">
                   <h4> LinkedIn </h4>

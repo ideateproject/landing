@@ -30,9 +30,19 @@ body {
   div.column {
     display: none;
  }
-  #dropdown{
-    display:block;
-    float: right;
+  #contactUs{
+    padding: 0px;
+    margin: 0px;
+  }
+  #signUp{
+    padding: 0px;
+    margin: 0px;
+  }
+  #bigLightbulb{
+    margin-top: 100px;
+  }
+  #smallLightbulb{
+    margin-right: 0px;
   }
   .motivationalcontent{
     width: 50%;
