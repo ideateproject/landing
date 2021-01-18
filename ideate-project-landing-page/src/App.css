@@ -1,38 +1,205 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.app__heading {
+	background: linear-gradient(180deg, #182637 0%, rgba(34, 93, 161, 0) 238.01%),
+		#225da1;
+	width: 98.7vw;
+	height: 710px;
+	color: white;
+	font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-top: 30px;
+	line-height: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__navbar li {
+	list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app__navbarLeft a,
+.app__navbarRight a {
+	font-size: 17px;
+	text-decoration: none;
+	color: #f4f4f4;
+	font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.app__navbarLeft a::after,
+.app__navbarRight a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #efaf45;
+	transition: width 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__navbarLeft a:hover::after,
+.app__navbarRight a:hover::after {
+	width: 100%;
+}
+
+.app__navbarLeft {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	width: 48%;
+	padding-left: 20px;
+}
+
+.app__navbarRight {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	width: 30%;
+	padding-right: 20px;
+}
+
+.signin__button {
+	background: #efaf45;
+	border-radius: 4px;
+	padding: 10px 25px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.app__name {
+	padding-top: 200px;
+}
+
+.main__title {
+	color: white;
+	font-weight: normal;
+	font-size: 80px;
+	line-height: 95px;
+	text-align: center;
+}
+
+.main__tagline {
+	padding-top: 15px;
+	color: white;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+	line-height: 55px;
+}
+
+.main__button {
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+.app__signinButton {
+	background: #efaf45;
+	border-radius: 4px;
+	padding: 10px 70px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+.app__universities {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #f4f4f4;
+	height: 150px;
+}
+
+.app__universities img {
+	opacity: 0.5;
+}
+
+/* editing height and width of university images */
+.app__universities .tulsa_univ {
+	height: 120px;
+	width: 120px;
+}
+
+.app__universities .penn_univ {
+	height: 60px;
+	width: 190px;
+}
+
+.app__universities .princeton_univ {
+	height: 70px;
+	width: 200px;
+}
+
+.app__universities .asu_univ {
+	height: 100px;
+	width: 130px;
+}
+
+.app__universities .oklahoma_univ {
+	height: 80px;
+	width: 280px;
+}
+/*finished editing university logos */
+
+.app__about {
+	padding: 0 80px;
+	background: linear-gradient(180deg, #f4f4f4 23.86%, #ffffff 70.46%);
+}
+
+.app__aboutText {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-family: 'Lato', sans-serif;
+}
+
+.app__title {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.app__descOne {
+	text-align: center;
+	padding: 0 22vw;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.app__descTwo {
+	text-align: center;
+	padding: 0 22vw;
+	padding-bottom: 60px;
+	line-height: 25px;
+}
+
+.vector_left_up {
+	position: absolute;
+	left: -1.55%;
+	top: 20.03%;
+}
+
+.vector_left_down {
+	position: absolute;
+	top: 69%;
+}
+
+.vector_right_up {
+	position: absolute;
+	right: 0.17%;
+	top: 34.5%;
+}
+
+.vector_right_down {
+	position: absolute;
+	left: 82.93%;
+	top: 65.5%;
 }
