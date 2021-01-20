@@ -1,15 +1,22 @@
 import './App.css';
-import tulsa_univ from './img/the-university-of-tulsa-logo.png';
-import penn_univ from './img/the-university-of-penn-logo.png';
-import princeton_univ from './img/the-university-of-princeton-logo.png';
-import asu_univ from './img/the-arizona-state-university-logo.png';
-import oklahoma_univ from './img/the-university-of-oklahoma-logo.png';
-import ideate_logo from './img/ideate_logo.png';
-import vector_left_up from './img/Vector_1.png';
-import vector_left_down from './img/Vector_2.png';
-import vector_right_up from './img/Vector_3.png';
-import vector_right_down from './img/Vector_4.png';
-import ellipse from './img/Ellipse_1.png';
+import tulsa_univ from './img/universities/the-university-of-tulsa-logo.png';
+import penn_univ from './img/universities/the-university-of-penn-logo.png';
+import princeton_univ from './img/universities/the-university-of-princeton-logo.png';
+import asu_univ from './img/universities/the-arizona-state-university-logo.png';
+import oklahoma_univ from './img/universities/the-university-of-oklahoma-logo.png';
+import ideate_logo from './img/vectors/ideate_logo.png';
+import vector_left_up from './img/vectors/Vector_1.png';
+import vector_left_down from './img/vectors/Vector_2.png';
+import vector_right_up from './img/vectors/Vector_3.png';
+import vector_right_down from './img/vectors/Vector_4.png';
+import vector_middle_left from './img/vectors/Vector_5.png';
+import vector_middle_right from './img/vectors/Vector_6.png';
+import jacob from './img/team/jacob_dodd.png';
+import thomas from './img/team/thomas_jankowski.png';
+import adam from './img/team/adam_kier.png';
+import matt from './img/team/matt_liu.png';
+import chandler from './img/team/chandler_malone.png';
+import david from './img/team/david_stewart.png';
 
 function App() {
 	return (
@@ -71,26 +78,6 @@ function App() {
 						<button className="app__signinButton">SIGN IN</button>
 					</div>
 				</div>
-				<img src={ellipse} />
-			</div>
-			<div className="app__universities">
-				<img
-					src={tulsa_univ}
-					alt="Tulsa_univ_logo"
-					className="tulsa_univ"
-				/>
-				<img src={penn_univ} alt="Penn_univ_logo" className="penn_univ" />
-				<img
-					src={princeton_univ}
-					alt="Princeton_univ_logo"
-					className="princeton_univ"
-				/>
-				<img src={asu_univ} alt="ASU_univ_logo" className="asu_univ" />
-				<img
-					src={oklahoma_univ}
-					alt="Oklahoma_univ_logo"
-					className="oklahoma_univ"
-				/>
 			</div>
 			<div className="app__about">
 				<div className="app__aboutText">
@@ -110,6 +97,91 @@ function App() {
 							offering access to content from industry leaders,
 							opportunities for funding, internships, and jobs.
 						</p>
+					</div>
+				</div>
+			</div>
+			<div className="app__content">
+				<img
+					src={vector_middle_left}
+					alt="The vector on the middle left"
+					className="vector_middle_left"
+				/>
+				<img
+					src={vector_middle_right}
+					className="vector_middle_right"
+					alt="The vector on the middle right"
+				/>
+				<div className="app__contentTitle">
+					<p>What we offer</p>
+				</div>
+				<div className="app__contentDesc">
+					<p>
+						Ideate <strong>connects</strong> students with the top student
+						entrepreneurs, engineers, designers, and scientists across the
+						country.
+					</p>
+				</div>
+				<div className="app__contentParts">
+					<div className="app__contentPartOne">
+						<h2>Students</h2>
+						<p>
+							Students can use Ideate to connect with students across
+							different disciplines to work together to build inspiring
+							projects.
+						</p>
+					</div>
+					<div className="app__contentPartTwo">
+						<h2>Universities</h2>
+						<p>
+							Students can engage with Ideate content from industry
+							leaders via articles, podcasts, and videos.
+						</p>
+					</div>
+					<div className="app__contentPartThree">
+						<h2>Employers</h2>
+						<p>
+							Ideate users get access to exclusive funding, mentorship,
+							project, internship, and job opportunities populated by
+							both Ideate and their universities.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="app__aboutUs">
+				<div className="app__team">
+					<div className="app__teamRowOne">
+						<div className="app__memberOne">
+							<img src={jacob} alt="Jacob Dodd" />
+							<p>Jacob Dodd</p>
+							<p>Job title</p>
+						</div>
+						<div className="app__memberTwo">
+							<img src={thomas} alt="Thomas Jankowski" />
+							<p>Thomas Jankowski</p>
+							<p>Job title</p>
+						</div>
+						<div className="app__memberThree">
+							<img src={adam} alt="Adam Kier" />
+							<p>Adam Kier</p>
+							<p>Job title</p>
+						</div>
+					</div>
+					<div className="app__teamRowTwo">
+						<div className="app__memberFour">
+							<img src={matt} alt="Matt Liu" />
+							<p>Matt Liu</p>
+							<p>Job title</p>
+						</div>
+						<div className="app__memberFive">
+							<img src={chandler} alt="Chandler Malone" />
+							<p>Chandler Malone</p>
+							<p>Job title</p>
+						</div>
+						<div className="app__memberSix">
+							<img src={david} alt="David Stewart" />
+							<p>David Stewart</p>
+							<p>Job title</p>
+						</div>
 					</div>
 				</div>
 			</div>

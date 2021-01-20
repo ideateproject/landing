@@ -109,45 +109,6 @@
 	justify-content: center;
 }
 
-.app__universities {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	background-color: #f4f4f4;
-	height: 150px;
-}
-
-.app__universities img {
-	opacity: 0.5;
-}
-
-/* editing height and width of university images */
-.app__universities .tulsa_univ {
-	height: 120px;
-	width: 120px;
-}
-
-.app__universities .penn_univ {
-	height: 60px;
-	width: 190px;
-}
-
-.app__universities .princeton_univ {
-	height: 70px;
-	width: 200px;
-}
-
-.app__universities .asu_univ {
-	height: 100px;
-	width: 130px;
-}
-
-.app__universities .oklahoma_univ {
-	height: 80px;
-	width: 280px;
-}
-/*finished editing university logos */
-
 .app__about {
 	padding: 0 80px;
 	background: linear-gradient(180deg, #f4f4f4 23.86%, #ffffff 70.46%);
@@ -202,4 +163,79 @@
 	position: absolute;
 	left: 82.93%;
 	top: 65.5%;
+}
+
+.vector_middle_left {
+	position: absolute;
+	top: 1300px;
+	left: 0;
+}
+
+.vector_middle_right {
+	position: absolute;
+	top: 1825px;
+	right: 0;
+}
+.app__content {
+	font-family: 'Lato', sans-serif;
+	padding: 0 175px;
+}
+
+.app__contentTitle {
+	text-align: center;
+	padding-top: 130px;
+	padding-bottom: 40px;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.app__contentDesc {
+	text-align: center;
+	padding: 0 15vw;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.app__contentParts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+
+.app__contentParts h2 {
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.app__contentParts p {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	padding-top: 15px;
+}
+
+.app__contentPartOne,
+.app__contentPartTwo,
+.app__contentPartThree {
+	width: 25%;
+	height: 200px;
+}
+
+.app__aboutUs {
+	padding: 0 200px;
+	background: #f5f8fb;
+	font-family: 'Lato', sans-serif;
+}
+.app__teamRowOne,
+.app__teamRowTwo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.app__teamRowOne p,
+.app__teamRowTwo p {
+	text-align: center;
 }
