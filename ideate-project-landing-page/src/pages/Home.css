@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.app__heading {
+	background: linear-gradient(180deg, #182637 0%, rgba(34, 93, 161, 0) 238.01%),
+		#225da1;
+	width: 100vw;
+	height: 710px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+.app__navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-top: 30px;
+	line-height: 20px;
+}
+
+.app__navbar li {
+	list-style: none;
+}
+
+.app__navbarLeft a,
+.app__navbarRight a {
+	font-size: 17px;
+	text-decoration: none;
+	color: #f4f4f4;
+	font-weight: 500;
+}
+
+.app__navbarLeft a::after,
+.app__navbarRight a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #efaf45;
+	transition: width 0.3s;
+}
+
+.app__navbarLeft a:hover::after,
+.app__navbarRight a:hover::after {
+	width: 100%;
+}
+
+.app__navbarLeft {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	width: 48%;
+	padding-left: 20px;
+}
+
+.app__navbarRight {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	width: 30%;
+	padding-right: 20px;
+}
+
+.signin__button {
+	background: #efaf45;
+	border-radius: 5px;
+	padding: 10px 25px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+}
+
+.app__name {
+	padding-top: 200px;
+}
+
+.main__title {
+	color: white;
+	font-weight: normal;
+	font-size: 80px;
+	line-height: 95px;
+	text-align: center;
+}
+
+.main__tagline {
+	padding-top: 15px;
+	color: white;
+	font-weight: 300;
+	font-size: 40px;
+	text-align: center;
+	line-height: 55px;
+}
+
+.main__button {
+	padding-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+.main__button button {
+	background: #efaf45;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 70px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+.app__about {
+	padding: 0 80px;
+	background: linear-gradient(180deg, #f4f4f4 23.86%, #ffffff 70.46%);
+}
+
+.app__aboutText {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	font-family: 'Lato', sans-serif;
+}
+
+.app__title {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 40px;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.app__descOne {
+	text-align: center;
+	padding: 0 22vw;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.app__descTwo {
+	text-align: center;
+	padding: 0 22vw;
+	padding-bottom: 60px;
+	line-height: 25px;
+}
+
+.vector_left_up {
+	position: absolute;
+	left: -1.55%;
+	top: 140px;
+}
+
+.vector_left_down {
+	position: absolute;
+	top: 478px;
+}
+
+.vector_right_up {
+	position: absolute;
+	right: 0;
+	top: 240px;
+}
+
+.vector_right_down {
+	position: absolute;
+	right: 0;
+	top: 455px;
+	width: 17vw;
+}
+
+.vector_middle_left {
+	position: absolute;
+	top: 1150px;
+	left: 0;
+}
+
+.vector_middle_right {
+	position: absolute;
+	top: 1630px;
+	right: 0;
+}
+
+.white__ellipse {
+	position: absolute;
+	left: 48.6vw;
+	top: 625px;
+}
+
+.expand__arrowOne {
+	position: absolute;
+	left: 49.6vw;
+	top: 640px;
+}
+
+.expand__arrowTwo {
+	position: absolute;
+	left: 49.6vw;
+	top: 648px;
+}
+
+.app__content {
+	font-family: 'Lato', sans-serif;
+	padding: 0 175px;
+	background: linear-gradient(180deg, #192738 -0.22%, #1f4b7d 99.97%), #182637;
+	color: white;
+}
+
+.app__contentTitle {
+	text-align: center;
+	padding-top: 130px;
+	padding-bottom: 40px;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.app__contentDesc {
+	text-align: center;
+	padding: 0 15vw;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.app__contentParts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 100px;
+	padding-bottom: 230px;
+}
+
+.app__contentParts h2 {
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.app__contentParts p {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	padding-top: 15px;
+}
+
+.app__contentPartOne,
+.app__contentPartTwo,
+.app__contentPartThree {
+	width: 25%;
+	height: 200px;
+}
+
+.app__aboutUs {
+	padding: 0 15vw;
+	margin: 0;
+	background: #f5f8fb;
+	font-family: 'Lato', sans-serif;
+}
+
+.app__aboutUsTitle {
+	text-align: center;
+	padding-top: 130px;
+	padding-bottom: 40px;
+	font-size: 35px;
+	font-weight: 500;
+}
+
+.app__aboutUsDescOne {
+	text-align: center;
+	padding: 0 13vw;
+	margin-bottom: 30px;
+	line-height: 25px;
+}
+
+.app__aboutUsDescTwo {
+	text-align: center;
+	padding: 0 13vw;
+	margin-bottom: 60px;
+	line-height: 25px;
+}
+
+.app__team {
+	padding-top: 50px;
+}
+
+.app__teamRowOne,
+.app__teamRowTwo {
+	margin-bottom: 50px;
+}
+
+.app__teamRowOne,
+.app__teamRowTwo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.app__teamRowOne p,
+.app__teamRowTwo p {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.app__teamRowOne p:first-child,
+.app__teamRowTwo p:first-child {
+	font-size: 50px;
+}
+
+.app__meetTheTeamButton {
+	margin-top: 80px;
+	display: flex;
+	justify-content: center;
+}
+
+.app__meetTheTeamButton button {
+	background: #225da1;
+	border-radius: 5px;
+	border: none;
+	padding: 15px 50px;
+	color: white;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.app__rectangleSVG img {
+	width: 100vw;
+}
+
+.app__platformImages {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	position: relative;
+	padding: 75px;
+}
+
+.app__platformimgtop {
+	grid-column: 1 / span 8;
+	grid-row: 1;
+	padding-top: 38%;
+	padding-left: 22%;
+	z-index: 1;
+	filter: drop-shadow(0px 5.94456px 35.6674px rgba(0, 0, 0, 0.1));
+}
+
+.app__platformimgdown {
+	grid-column: 4 / -1;
+	grid-row: 1;
+	padding-left: 5%;
+	filter: drop-shadow(0px 5.94456px 35.6674px rgba(0, 0, 0, 0.1));
+}
+
+.app__signup {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 18vw;
+	font-family: 'Lato', sans-serif;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	background: #fafbfd;
+}
+
+.app__signuptext p:first-child {
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 40px;
+	padding-bottom: 10px;
+}
+
+.app__signuptext p:last-child {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.app__signupbtn button {
+	background: #efaf45;
+	border-radius: 5px;
+	border: none;
+	padding: 10px 70px;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}
+
+.app__footer {
+	background: #182637;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10vw;
+	padding-top: 125px;
+	padding-bottom: 125px;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+.app__footerleft img {
+	padding-bottom: 25px;
+}
+
+.app__footerleft p {
+	font-size: 15px;
+	line-height: 15px;
+}
+
+.app__footerright {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
+}
+
+.app__footerright p {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.app button:hover {
+	cursor: pointer;
+}
