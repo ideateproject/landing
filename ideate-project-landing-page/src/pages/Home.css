@@ -419,6 +419,6 @@
 	line-height: 20px;
 }
 
-.app button:hover {
+button:hover {
 	cursor: pointer;
 }

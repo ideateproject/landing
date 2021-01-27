@@ -26,8 +26,13 @@ import Col from 'react-bootstrap/Col';
 function Home() {
 	const history = useHistory();
 
-	const routeChange = () => {
+	const loginroute = () => {
 		let path = `/signin`;
+		history.push(path);
+	};
+
+	const teamroute = () => {
+		let path = `/team`;
 		history.push(path);
 	};
 
@@ -57,7 +62,7 @@ function Home() {
 							<a href="#">Contact Us</a>
 						</li>
 						<li>
-							<button className="signin__button" onClick={routeChange}>
+							<button className="signin__button" onClick={loginroute}>
 								SIGN IN
 							</button>
 						</li>
@@ -89,7 +94,7 @@ function Home() {
 					<p className="main__title">The Ideate Project</p>
 					<p className="main__tagline">This is a nice tagline</p>
 					<div className="main__button">
-						<button onClick={routeChange}>SIGN IN</button>
+						<button onClick={loginroute}>SIGN IN</button>
 					</div>
 				</div>
 				<img src={ellipse} alt="White Circle" className="white__ellipse" />
@@ -239,7 +244,7 @@ function Home() {
 					</div>
 				</div>
 				<div className="app__meetTheTeamButton">
-					<button>Meet our team</button>
+					<button onClick={teamroute}>Meet our team</button>
 				</div>
 			</div>
 			<div className="app__rectangleSVG">
@@ -264,7 +269,7 @@ function Home() {
 					</p>
 				</div>
 				<div className="app__signupbtn">
-					<button onClick={routeChange}>SIGN IN</button>
+					<button onClick={loginroute}>SIGN IN</button>
 				</div>
 			</div>
 

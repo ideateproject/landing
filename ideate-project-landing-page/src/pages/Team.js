@@ -1,5 +1,4 @@
 import './Team.css';
-
 import React from 'react';
 
 function Team() {
