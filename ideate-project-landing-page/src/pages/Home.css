@@ -18,6 +18,10 @@
 	line-height: 20px;
 }
 
+.app__navbar img:hover {
+	cursor: pointer;
+}
+
 .app__navbar li {
 	list-style: none;
 }

@@ -18,13 +18,22 @@ function Team() {
 		history.push(path);
 	};
 
+	const homeroute = () => {
+		let path = `/`;
+		history.push(path);
+	};
+
 	return (
 		<div className="team">
 			<div className="team__header">
 				<div className="team__navbar">
 					<ul className="team__navbarLeft">
 						<li>
-							<img src={ideate_logo} alt="The Ideate Project Logo" />
+							<img
+								onClick={homeroute}
+								src={ideate_logo}
+								alt="The Ideate Project Logo"
+							/>
 						</li>
 						<li>
 							<a href="#">For Students</a>

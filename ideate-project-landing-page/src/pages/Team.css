@@ -20,6 +20,10 @@
 	line-height: 20px;
 }
 
+.team__navbar img:hover {
+	cursor: pointer;
+}
+
 .team__navbar li {
 	list-style: none;
 }

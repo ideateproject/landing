@@ -36,13 +36,22 @@ function Home() {
 		history.push(path);
 	};
 
+	const homeroute = () => {
+		let path = `/`;
+		history.push(path);
+	};
+
 	return (
 		<div className="app">
 			<div className="app__heading">
 				<div className="app__navbar">
 					<ul className="app__navbarLeft">
 						<li>
-							<img src={ideate_logo} alt="The Ideate Project Logo" />
+							<img
+								onClick={homeroute}
+								src={ideate_logo}
+								alt="The Ideate Project Logo"
+							/>
 						</li>
 						<li>
 							<a href="#">For Students</a>
