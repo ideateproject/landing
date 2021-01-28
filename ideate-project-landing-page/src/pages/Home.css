@@ -4,7 +4,7 @@
 	background: linear-gradient(180deg, #182637 0%, rgba(34, 93, 161, 0) 238.01%),
 		#225da1;
 	width: 100vw;
-	height: 710px;
+	height: 100vh;
 	color: white;
 	font-family: 'Lato', sans-serif;
 }
@@ -157,20 +157,23 @@
 
 .vector_left_down {
 	position: absolute;
-	top: 478px;
+	top: 75%;
+	left: 0px;
+	height: 25%;
 }
 
 .vector_right_up {
 	position: absolute;
 	right: 0;
-	top: 240px;
+	height: 55%;
+	top: 45%;
 }
 
 .vector_right_down {
 	position: absolute;
 	right: 0;
-	top: 455px;
-	width: 17vw;
+	top: 70%;
+	height: 30%;
 }
 
 .vector_middle_left {
