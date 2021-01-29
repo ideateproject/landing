@@ -101,7 +101,7 @@ function Home() {
 				{/* finished adding vector images */}
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
-					<p className="main__tagline">This is a nice tagline</p>
+					<p className="main__tagline">Unlock access to the technology ecosystem</p>
 					<div className="main__button">
 						<button onClick={loginroute}>SIGN IN</button>
 					</div>
@@ -211,21 +211,21 @@ function Home() {
 							<p>
 								<strong>Jacob Dodd</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Product</p>
 						</div>
 						<div className="app__memberTwo">
 							<img src={thomas} alt="Thomas Jankowski" />
 							<p>
 								<strong>Thomas Jankowski</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Digital</p>
 						</div>
 						<div className="app__memberThree">
 							<img src={adam} alt="Adam Kier" />
 							<p>
 								<strong>Adam Kier</strong>
 							</p>
-							<p>Job title</p>
+							<p>Chief Technical Officer</p>
 						</div>
 					</div>
 					<div className="app__teamRowTwo">
@@ -234,21 +234,21 @@ function Home() {
 							<p>
 								<strong>Matt Liu</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Custmer Success</p>
 						</div>
 						<div className="app__memberFive">
 							<img src={chandler} alt="Chandler Malone" />
 							<p>
 								<strong>Chandler Malone</strong>
 							</p>
-							<p>Job title</p>
+							<p>Chief Executive Officer</p>
 						</div>
 						<div className="app__memberSix">
 							<img src={david} alt="David Stewart" />
 							<p>
-								<strong>David Stewart</strong>
+								<strong>Tammy</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Marketing</p>
 						</div>
 					</div>
 				</div>
