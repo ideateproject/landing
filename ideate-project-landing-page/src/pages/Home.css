@@ -202,6 +202,10 @@
 	width: 3.5%;
 	padding-top: 10%;
 	/* top: 625px; */
+	animation: bounce 0.5s; 
+	animation-direction: alternate; 
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+	animation-iteration-count: 4; 
 }
 
 .expand__arrowOne {
@@ -211,6 +215,10 @@
 	margin-left: 49%;
 	width: 2%;
 	/* top: 640px; */
+	animation: bounce 0.5s; 
+	animation-direction: alternate; 
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+	animation-iteration-count: 4; 	
 }
 
 .expand__arrowTwo {
@@ -220,7 +228,20 @@
 	margin-left: 49%;
 	width: 2%;
 	/* top: 648px; */
+	animation: bounce 0.5s; 
+	animation-direction: alternate; 
+	animation-timing-function: cubic-bezier(.5, 0.05, 1, .5); 
+	animation-iteration-count: 4; 
 }
+
+@keyframes bounce { 
+	from { 
+		transform: translate3d(0, 0, 0); 
+	} 
+	to { 
+		transform: translate3d(0, 100px, 0); 
+	} 
+} 
 
 .app__content {
 	font-family: 'Lato', sans-serif;
