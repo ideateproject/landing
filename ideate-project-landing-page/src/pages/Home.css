@@ -78,28 +78,29 @@
 }
 
 .app__name {
-	padding-top: 200px;
+	padding-top: 15%;
 }
 
 .main__title {
 	color: white;
 	font-weight: normal;
-	font-size: 80px;
+	font-size: 5em;
 	line-height: 95px;
 	text-align: center;
+	padding: 0 20%;
 }
 
 .main__tagline {
-	padding-top: 15px;
 	color: white;
 	font-weight: 300;
-	font-size: 40px;
+	font-size: 2.5rem;
 	text-align: center;
 	line-height: 55px;
+	padding: 15px 20% 0px 20%;
 }
 
 .main__button {
-	padding-top: 60px;
+	padding-top: 3%;
 	display: flex;
 	justify-content: center;
 }
@@ -119,17 +120,18 @@
 .app__about {
 	padding: 0 80px;
 	background: linear-gradient(180deg, #f4f4f4 23.86%, #ffffff 70.46%);
+	height: 75vh;
 }
 
 .app__aboutText {
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	/* border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
 	font-family: 'Lato', sans-serif;
 }
 
 .app__title {
 	text-align: center;
-	padding-top: 80px;
+	padding-top: 10%;
 	padding-bottom: 40px;
 	font-size: 35px;
 	font-weight: 500;
@@ -152,7 +154,8 @@
 .vector_left_up {
 	position: absolute;
 	left: -1.55%;
-	top: 140px;
+	top: 18%;
+	height: 50%
 }
 
 .vector_left_down {
@@ -190,20 +193,28 @@
 
 .white__ellipse {
 	position: absolute;
-	left: 48.6vw;
-	top: 625px;
+	margin-left: 48.25%;
+	width: 3.5%;
+	padding-top: 10%;
+	/* top: 625px; */
 }
 
 .expand__arrowOne {
 	position: absolute;
-	left: 49.6vw;
-	top: 640px;
+	/* left: 49.7vw; */
+	padding-top: 10.8%;
+	margin-left: 49%;
+	width: 2%;
+	/* top: 640px; */
 }
 
 .expand__arrowTwo {
 	position: absolute;
-	left: 49.6vw;
-	top: 648px;
+	/* left: 49.7vw; */
+	padding-top: 11.8%;
+	margin-left: 49%;
+	width: 2%;
+	/* top: 648px; */
 }
 
 .app__content {
