@@ -190,7 +190,9 @@
 
 .vector_middle_right {
 	position: absolute;
-	top: 1630px;
+	top: 215%;
+	height: 20%;
+	width: 15%;
 	right: 0;
 }
 
@@ -225,13 +227,14 @@
 	padding: 0 175px;
 	background: linear-gradient(180deg, #192738 -0.22%, #1f4b7d 99.97%), #182637;
 	color: white;
+	height: 100vh;
 }
 
 .app__contentTitle {
 	text-align: center;
 	padding-top: 130px;
 	padding-bottom: 40px;
-	font-size: 35px;
+	font-size: 2.5rem;
 	font-weight: 500;
 }
 
@@ -252,12 +255,12 @@
 
 .app__contentParts h2 {
 	font-weight: 500;
-	font-size: 30px;
+	font-size: 2.5rem;
 }
 
 .app__contentParts p {
 	font-weight: 500;
-	font-size: 15px;
+	font-size: .90rem;
 	line-height: 22px;
 	padding-top: 15px;
 }
