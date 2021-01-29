@@ -133,7 +133,7 @@
 	text-align: center;
 	padding-top: 20%;
 	padding-bottom: 40px;
-	font-size: 35px;
+	font-size: 3rem;
 	font-weight: 500;
 }
 
@@ -142,6 +142,7 @@
 	padding: 0 22vw;
 	padding-bottom: 30px;
 	line-height: 25px;
+	font-size: 1.5rem;
 }
 
 .app__descTwo {
@@ -149,6 +150,7 @@
 	padding: 0 22vw;
 	padding-bottom: 60px;
 	line-height: 25px;
+	font-size: 1.5rem;
 }
 
 .vector_left_up {
