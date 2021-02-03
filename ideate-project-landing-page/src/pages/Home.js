@@ -101,7 +101,7 @@ function Home() {
 				{/* finished adding vector images */}
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
-					<p className="main__tagline">Unlock access to the technology ecosystem</p>
+					<p className="main__tagline">Find internships & jobs in tech</p>
 					<div className="main__button">
 						<button onClick={loginroute}>SIGN IN</button>
 					</div>
@@ -162,26 +162,25 @@ function Home() {
 				</div>
 				<div className="app__contentParts">
 					<div className="app__contentPartOne">
-						<h2>Students</h2>
+						<h2>Individuals</h2>
 						<p>
-							Students can use Ideate to connect with students across
-							different disciplines to work together to build inspiring
-							projects.
+							Find internships & jobs in tech or meet co founders,
+							apply for funding, and launch your own startup
 						</p>
 					</div>
 					<div className="app__contentPartTwo">
-						<h2>Universities</h2>
+						<h2>Educators</h2>
 						<p>
-							Students can engage with Ideate content from industry
-							leaders via articles, podcasts, and videos.
+							Improve student success through real time analytics on your 
+							students alongside a host of educational modules and internship 
+							and job opportunities
 						</p>
 					</div>
 					<div className="app__contentPartThree">
 						<h2>Employers</h2>
 						<p>
-							Ideate users get access to exclusive funding, mentorship,
-							project, internship, and job opportunities populated by
-							both Ideate and their universities.
+							Get access to diverse, pre vetted talent in tech, while decreasing 
+							hiring times by 50% through our platform
 						</p>
 					</div>
 				</div>
