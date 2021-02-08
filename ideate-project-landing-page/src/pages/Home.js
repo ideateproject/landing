@@ -101,7 +101,7 @@ function Home() {
 				{/* finished adding vector images */}
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
-					<p className="main__tagline">This is a nice tagline</p>
+					<p className="main__tagline">Find internships & jobs in tech</p>
 					<div className="main__button">
 						<button onClick={loginroute}>SIGN IN</button>
 					</div>
@@ -162,26 +162,25 @@ function Home() {
 				</div>
 				<div className="app__contentParts">
 					<div className="app__contentPartOne">
-						<h2>Students</h2>
+						<h2>Individuals</h2>
 						<p>
-							Students can use Ideate to connect with students across
-							different disciplines to work together to build inspiring
-							projects.
+							Find internships & jobs in tech or meet co founders,
+							apply for funding, and launch your own startup
 						</p>
 					</div>
 					<div className="app__contentPartTwo">
-						<h2>Universities</h2>
+						<h2>Educators</h2>
 						<p>
-							Students can engage with Ideate content from industry
-							leaders via articles, podcasts, and videos.
+							Improve student success through real time analytics on your 
+							students alongside a host of educational modules and internship 
+							and job opportunities
 						</p>
 					</div>
 					<div className="app__contentPartThree">
 						<h2>Employers</h2>
 						<p>
-							Ideate users get access to exclusive funding, mentorship,
-							project, internship, and job opportunities populated by
-							both Ideate and their universities.
+							Get access to diverse, pre vetted talent in tech, while decreasing 
+							hiring times by 50% through our platform
 						</p>
 					</div>
 				</div>
@@ -211,21 +210,21 @@ function Home() {
 							<p>
 								<strong>Jacob Dodd</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Product</p>
 						</div>
 						<div className="app__memberTwo">
 							<img src={thomas} alt="Thomas Jankowski" />
 							<p>
 								<strong>Thomas Jankowski</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Digital</p>
 						</div>
 						<div className="app__memberThree">
 							<img src={adam} alt="Adam Kier" />
 							<p>
 								<strong>Adam Kier</strong>
 							</p>
-							<p>Job title</p>
+							<p>Chief Technical Officer</p>
 						</div>
 					</div>
 					<div className="app__teamRowTwo">
@@ -234,21 +233,21 @@ function Home() {
 							<p>
 								<strong>Matt Liu</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Custmer Success</p>
 						</div>
 						<div className="app__memberFive">
 							<img src={chandler} alt="Chandler Malone" />
 							<p>
 								<strong>Chandler Malone</strong>
 							</p>
-							<p>Job title</p>
+							<p>Chief Executive Officer</p>
 						</div>
 						<div className="app__memberSix">
 							<img src={david} alt="David Stewart" />
 							<p>
-								<strong>David Stewart</strong>
+								<strong>Tammy</strong>
 							</p>
-							<p>Job title</p>
+							<p>Head of Marketing</p>
 						</div>
 					</div>
 				</div>
