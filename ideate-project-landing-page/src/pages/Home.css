@@ -67,14 +67,17 @@
 	padding-right: 20px;
 }
 
-.signin__button {
+.signin__btn {
 	background: #efaf45;
 	border-radius: 5px;
 	padding: 10px 25px;
 	color: white;
+	border: none;
+}
+
+.signin__btn a {
 	font-size: 14px;
 	font-weight: bold;
-	border: none;
 }
 
 .app__name {

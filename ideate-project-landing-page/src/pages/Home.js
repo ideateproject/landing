@@ -1,5 +1,5 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import './Home.css';
 import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
@@ -27,7 +27,7 @@ function Home() {
 	const history = useHistory();
 
 	const loginroute = () => {
-		let path = `/signin`;
+		let path = `/login`;
 		history.push(path);
 	};
 
@@ -71,7 +71,7 @@ function Home() {
 							<a href="#">Contact Us</a>
 						</li>
 						<li>
-							<button className="signin__button" onClick={loginroute}>
+							<button className="signin__btn" onClick={loginroute}>
 								SIGN IN
 							</button>
 						</li>
