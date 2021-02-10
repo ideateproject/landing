@@ -2,7 +2,7 @@
 
 .app__heading {
 	background: linear-gradient(180deg, #182637 0%, rgba(34, 93, 161, 0) 238.01%),
-		#225da1;
+		 #182637 0%;
 	width: 100vw;
 	height: 100vh;
 	color: white;
@@ -90,13 +90,30 @@
 	padding: 0 20%;
 }
 
-.main__tagline {
+.top__main__tagline {
 	color: white;
 	font-weight: 300;
-	font-size: 2.5rem;
+	font-size: 1.4rem;
 	text-align: center;
 	line-height: 55px;
 	padding: 15px 20% 0px 20%;
+}
+
+.middle__main__tagline {
+	color: white;
+	font-weight: 300;
+	font-size: 1.4rem;
+	text-align: center;
+	padding: none;
+}
+
+.bottom__main__tagline {
+	color: white;
+	font-weight: 300;
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 55px;
+	padding: 0px 20% 0px 20%;
 }
 
 .main__button {
@@ -120,7 +137,8 @@
 .app__about {
 	padding: 0 80px;
 	background: linear-gradient(180deg, #f4f4f4 23.86%, #ffffff 70.46%);
-	height: 90vh;
+	height: 100vh;
+	display: none;
 }
 
 .app__aboutText {
@@ -200,7 +218,7 @@
 	position: absolute;
 	margin-left: 48.25%;
 	width: 3.5%;
-	padding-top: 10%;
+	padding-top: 5%;
 	/* top: 625px; */
 	animation: bounce 0.5s; 
 	animation-direction: alternate; 
@@ -211,7 +229,7 @@
 .expand__arrowOne {
 	position: absolute;
 	/* left: 49.7vw; */
-	padding-top: 10.8%;
+	padding-top: 5.8%;
 	margin-left: 49%;
 	width: 2%;
 	/* top: 640px; */
@@ -224,7 +242,7 @@
 .expand__arrowTwo {
 	position: absolute;
 	/* left: 49.7vw; */
-	padding-top: 11.8%;
+	padding-top: 6.8%;
 	margin-left: 49%;
 	width: 2%;
 	/* top: 648px; */
@@ -246,7 +264,9 @@
 .app__content {
 	font-family: 'Lato', sans-serif;
 	padding: 0 175px;
-	background: linear-gradient(180deg, #192738 -0.22%, #1f4b7d 99.97%), #182637;
+	/* background: linear-gradient(180deg, #192738 -0.22%, #1f4b7d 99.97%), #182637; */
+		background: linear-gradient(180deg, #182637 0%, rgba(34, 93, 161, 0) 238.01%),
+		#225da1;
 	color: white;
 	height: 100vh;
 }

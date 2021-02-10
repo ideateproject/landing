@@ -101,7 +101,9 @@ function Home() {
 				{/* finished adding vector images */}
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
-					<p className="main__tagline">Find internships & jobs in tech</p>
+					<p className="top__main__tagline">Find internships & jobs in tech</p>
+					<p className="middle__main__tagline"> or </p>
+					<p className="bottom__main__tagline">Meet co founders, apply for funding, and launch your own startup</p>
 					<div className="main__button">
 						<button onClick={loginroute}>SIGN IN</button>
 					</div>
@@ -233,7 +235,7 @@ function Home() {
 							<p>
 								<strong>Matt Liu</strong>
 							</p>
-							<p>Head of Custmer Success</p>
+							<p>Head of Business Development</p>
 						</div>
 						<div className="app__memberFive">
 							<img src={chandler} alt="Chandler Malone" />
@@ -247,7 +249,7 @@ function Home() {
 							<p>
 								<strong>Tammy</strong>
 							</p>
-							<p>Head of Marketing</p>
+							<p>Chief Operating Officer</p>
 						</div>
 					</div>
 				</div>
