@@ -2,12 +2,12 @@ import './Team.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import ideate_logo from '../img/vectors/ideate_logo.png';
-import jacob from '../img/team_page/jacob_dodd_yl.png';
-import thomas from '../img/team_page/thomas_jankowski_yl.png';
-import adam from '../img/team_page/adam_kier_yl.png';
-import matt from '../img/team_page/matt_liu_yl.png';
-import chandler from '../img/team_page/chandler_malone_yl.png';
-import david from '../img/team_page/david_stewart_yl.png';
+import jacob from '../img/team/jacob_dodd.png';
+import thomas from '../img/team/thomas_jankowski.png';
+import adam from '../img/team/adam_kier.png';
+import matt from '../img/team/matt_liu.png';
+import chandler from '../img/team/chandler_malone.png';
+import tammy from '../img/team/tammy.png';
 import vector_left from '../img/vectors/vector_team.png';
 
 function Team() {
@@ -23,10 +23,12 @@ function Team() {
 		history.push(path);
 	};
 
+	window.scrollTo(0, 0);
+
 	return (
 		<div className="team">
 			<div className="team__header">
-				<div className="team__navbar">
+				<div id="nav" className="team__navbar">
 					<ul className="team__navbarLeft">
 						<li>
 							<img
@@ -36,21 +38,21 @@ function Team() {
 							/>
 						</li>
 						<li>
-							<a href="#">For Students</a>
+							<a href="/#descriptions">For Students</a>
 						</li>
 						<li>
-							<a href="#">For Universities</a>
+							<a href="/#descriptions">For Universities</a>
 						</li>
 						<li>
-							<a href="#">For Employers</a>
+							<a href="/#descriptions">For Employers</a>
 						</li>
 					</ul>
 					<ul className="team__navbarRight">
 						<li>
-							<a href="#">About Us</a>
+							<a href="/#about">About Us</a>
 						</li>
 						<li>
-							<a href="#">Contact Us</a>
+							<a href="/#contact">Contact Us</a>
 						</li>
 						<li>
 							<button className="team__signinbtn" onClick={loginroute}>
@@ -101,8 +103,8 @@ function Team() {
 				</div>
 				<div className="team__descThree">
 					<div className="team__descimg">
-						<img src={adam} alt="Adam Kier" />
-						<p>Adam Kier</p>
+						<img src={adam} alt="Adam Krier" />
+						<p>Adam Krier</p>
 					</div>
 					<p>
 						As a seasoned Solutions Architect, Digital Transformation,
@@ -152,16 +154,17 @@ function Team() {
 				</div>
 				<div className="team__descSix">
 					<div className="team__descimg">
-						<img src={david} alt="David Stewart" />
-						<p>David Stewart</p>
+						<img src={tammy} alt="Tammy Clottey" />
+						<p>Tammy Clottey</p>
 					</div>
 					<p>
-						David is a lifelong Oklahoman and the middle child of 5
-						siblings. He graduated from OSU with a degree in accounting,
-						but soon after discovered a love of coding and has been doing
-						front-end web development for almost 6 years. When David isn't
-						not coding he enjoys hiking, traveling, video games, and
-						exploring new hobbies.
+						Tammy is a multi-faceted professional with a background in leadership, 
+						strategic planning and problem solving. As a proven change agent with 
+						a diverse set of experiences, Tammy possesses the ability to engage in 
+						detail while maintaining big-picture objectives. Also known to be 
+						proactive and results-oriented, Tammy has been consistently recognized for 
+						affecting positive change and enhancing the projects, programs and organizations 
+						she's affiliated with.	
 					</p>
 				</div>
 			</div>

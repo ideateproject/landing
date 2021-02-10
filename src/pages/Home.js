@@ -32,7 +32,7 @@ function Home() {
 	};
 
 	const teamroute = () => {
-		let path = `/team`;
+		let path = `/team#nav`;
 		history.push(path);
 	};
 
@@ -44,7 +44,7 @@ function Home() {
 	return (
 		<div className="app">
 			<div className="app__heading">
-				<div className="app__navbar">
+				<div id="nav" className="app__navbar">
 					<ul className="app__navbarLeft">
 						<li>
 							<img
@@ -54,21 +54,21 @@ function Home() {
 							/>
 						</li>
 						<li>
-							<a href="#">For Students</a>
+							<a href="#descriptions">For Students</a>
 						</li>
 						<li>
-							<a href="#">For Universities</a>
+							<a href="#descriptions">For Universities</a>
 						</li>
 						<li>
-							<a href="#">For Employers</a>
+							<a href="#descriptions">For Employers</a>
 						</li>
 					</ul>
 					<ul className="app__navbarRight">
 						<li>
-							<a href="#">About Us</a>
+							<a href="#about">About Us</a>
 						</li>
 						<li>
-							<a href="#">Contact Us</a>
+							<a href="#contact">Contact Us</a>
 						</li>
 						<li>
 							<button className="signin__btn" onClick={loginroute}>
@@ -152,14 +152,12 @@ function Home() {
 					className="vector_middle_right"
 					alt="The vector on the middle right"
 				/>
-				<div className="app__contentTitle">
-					<p>What we offer</p>
+				<div id="descriptions" className="app__contentTitle">
+					<b>What we offer</b>
 				</div>
 				<div className="app__contentDesc">
 					<p>
-						Ideate <strong>connects</strong> students with the top student
-						entrepreneurs, engineers, designers, and scientists across the
-						country.
+						Ideate <strong>connects</strong> you to the entire technology ecosystem
 					</p>
 				</div>
 				<div className="app__contentParts">
@@ -187,7 +185,7 @@ function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="app__aboutUs">
+			<div id="about" className="app__aboutUs">
 				<div className="app__aboutUsTitle">
 					<p>About Us</p>
 				</div>
@@ -224,7 +222,7 @@ function Home() {
 						<div className="app__memberThree">
 							<img src={adam} alt="Adam Kier" />
 							<p>
-								<strong>Adam Kier</strong>
+								<strong>Adam Krier</strong>
 							</p>
 							<p>Chief Technical Officer</p>
 						</div>
@@ -245,11 +243,11 @@ function Home() {
 							<p>Chief Executive Officer</p>
 						</div>
 						<div className="app__memberSix">
-							<img src={tammy} alt="David Stewart" />
+							<img src={tammy} alt="Tammy Clottey" />
 							<p>
-								<strong>Tammy</strong>
+								<strong>Tammy Clottey</strong>
 							</p>
-							<p>Chief Operating Officer</p>
+							<p>Head of Special Projects</p>
 						</div>
 					</div>
 				</div>
@@ -283,7 +281,7 @@ function Home() {
 				</div>
 			</div>
 
-			<div className="app__footer">
+			<div id="contact" className="app__footer">
 				<div className="app__footerleft">
 					<img src={ideate_logo} alt="The Ideate Project Logo" />
 					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
