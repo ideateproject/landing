@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
 import Team from './pages/Team.js';
-import Signin from './pages/Signin.js';
+import Login from './pages/Login.js';
 
 function App() {
 	return (
@@ -12,8 +12,8 @@ function App() {
 					<Route path="/team">
 						<Team />
 					</Route>
-					<Route path="/signin">
-						<Signin />
+					<Route path="/login">
+						<Login />
 					</Route>
 					<Route path="/">
 						<Home />

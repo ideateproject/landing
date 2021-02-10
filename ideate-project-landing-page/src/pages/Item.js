@@ -1,15 +1,13 @@
-import React from 'react';
-import { Paper, Button } from '@material-ui/core';
+import styled from 'styled-components';
 
-function Item(props) {
-	return (
-		<Paper>
-			<h2>{props.item.name}</h2>
-			<p>{props.item.Description}</p>
-
-			<Button className="CheckButton">Check it out!!</Button>
-		</Paper>
-	);
-}
-
-export default Item;
+export default styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 150px;
+	width: 300px;
+	background-color: #fff;
+	color: #000;
+	margin: 15px;
+	font-size: 4em;
+`;
