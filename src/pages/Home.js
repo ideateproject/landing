@@ -203,48 +203,48 @@ function Home() {
 				<div className="app__team">
 					<div className="app__teamRowOne">
 						<div className="app__memberOne">
+							<img src={tammy} alt="Tammy Clottey" />
+							<p>
+								<strong>Tammy Clottey</strong>
+							</p>
+							<p>Head of Special Projects</p>
+						</div>
+						<div className="app__memberTwo">
 							<img src={jacob} alt="Jacob Dodd" />
 							<p>
 								<strong>Jacob Dodd</strong>
 							</p>
 							<p>Head of Product</p>
 						</div>
-						<div className="app__memberTwo">
+						<div className="app__memberThree">
 							<img src={thomas} alt="Thomas Jankowski" />
 							<p>
 								<strong>Thomas Jankowski</strong>
 							</p>
 							<p>Head of Digital</p>
 						</div>
-						<div className="app__memberThree">
+					</div>
+					<div className="app__teamRowTwo">
+						<div className="app__memberFour">
 							<img src={adam} alt="Adam Kier" />
 							<p>
 								<strong>Adam Krier</strong>
 							</p>
 							<p>Chief Technical Officer</p>
 						</div>
-					</div>
-					<div className="app__teamRowTwo">
-						<div className="app__memberFour">
+						<div className="app__memberFive">
 							<img src={matt} alt="Matt Liu" />
 							<p>
 								<strong>Matt Liu</strong>
 							</p>
 							<p>Head of Business Development</p>
 						</div>
-						<div className="app__memberFive">
+						<div className="app__memberSix">
 							<img src={chandler} alt="Chandler Malone" />
 							<p>
 								<strong>Chandler Malone</strong>
 							</p>
 							<p>Chief Executive Officer</p>
-						</div>
-						<div className="app__memberSix">
-							<img src={tammy} alt="Tammy Clottey" />
-							<p>
-								<strong>Tammy Clottey</strong>
-							</p>
-							<p>Head of Special Projects</p>
 						</div>
 					</div>
 				</div>
