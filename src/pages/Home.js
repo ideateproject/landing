@@ -24,7 +24,7 @@ function Home() {
 	const history = useHistory();
 
 	const loginroute = () => {
-		let path = `/login`;
+		let path = `https://staging.ideateproject.org`;
 		history.push(path);
 	};
 
@@ -267,7 +267,7 @@ function Home() {
 
 			<div className="app__signup">
 				<div className="app__signuptext">
-					<p>Sign up for access to our beta.</p>
+					<p>Sign up for access to Ideate.</p>
 					<p>
 						Share your ideas to find collaborators and comment on the
 						ideas of others.
