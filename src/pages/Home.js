@@ -24,7 +24,7 @@ function Home() {
 	const history = useHistory();
 
 	const loginroute = () => {
-		let path = `/login`;
+		let path = `https://staging.ideateproject.org`;
 		history.push(path);
 	};
 
