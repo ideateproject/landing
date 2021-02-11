@@ -1,5 +1,4 @@
 import React from 'react';
-import { useHistory, Link } from 'react-router-dom';
 import './Home.css';
 import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
@@ -19,9 +18,6 @@ import chandler from '../img/team/chandler_malone.png';
 import tammy from '../img/team/tammy.png';
 import platform_img1 from '../img/platform/platform_img1.png';
 import platform_img2 from '../img/platform/platform_img2.png';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 function Home() {
 	const history = useHistory();
@@ -256,15 +252,15 @@ function Home() {
 				</div>
 			</div>
 			<div className="app__rectangleSVG">
-				<img src={rectangle} />
+				<img src={rectangle} alt="image" />
 			</div>
 
 			<div className="app__platformImages">
 				<div className="app__platformimgdown">
-					<img src={platform_img1} />
+					<img src={platform_img1} alt="Platform Image 1" />
 				</div>
 				<div className="app__platformimgtop">
-					<img src={platform_img2} />
+					<img src={platform_img2} alt="Platform Image 2" />
 				</div>
 			</div>
 
