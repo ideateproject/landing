@@ -8,7 +8,7 @@ function Login() {
 	const [email, setEmail] = useState('');
 	const [forgotPassEmail, setForgotPassEmail] = useState('');
 	const [password, setPassword] = useState('');
-	const [message, showMessage] = useState(false);
+	const [message] = useState(false);
 
 	const homeroute = () => {
 		let path = `/`;
