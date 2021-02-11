@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './Home.css';
 import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
