@@ -491,3 +491,25 @@
 button:hover {
 	cursor: pointer;
 }
+
+/*
+mobile optimization, hiding decorative elements when
+screen size is small
+*/
+@media (max-width: 767px) {                  
+   .vector_left_up,
+   .vector_left_down,
+   .vector_middle_left,
+   .vector_middle_right,
+   .vector_right_down,
+   .vector_right_up,
+   .app__navbar,
+   .app__content,
+   .app__team,
+   .app__meetTheTeamButton,
+   .app__platformImages,
+   .app__signupbtn,
+   .app__footerright {
+      display: none;
+   }
+}
