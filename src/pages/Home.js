@@ -252,15 +252,15 @@ function Home() {
 				</div>
 			</div>
 			<div className="app__rectangleSVG">
-				<img src={rectangle} />
+				<img src={rectangle} alt="image" />
 			</div>
 
 			<div className="app__platformImages">
 				<div className="app__platformimgdown">
-					<img src={platform_img1} />
+					<img src={platform_img1} alt="Platform Image 1" />
 				</div>
 				<div className="app__platformimgtop">
-					<img src={platform_img2} />
+					<img src={platform_img2} alt="Platform Image 2" />
 				</div>
 			</div>
 
