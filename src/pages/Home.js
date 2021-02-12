@@ -33,6 +33,11 @@ function Home() {
 		history.push(path);
 	};
 
+	const privacyroute = () => {
+		let path = `/privacy`;
+		history.push(path);
+	};
+
 	const homeroute = () => {
 		let path = `/`;
 		history.push(path);
@@ -285,7 +290,7 @@ function Home() {
 				</div>
 				<div className="app__footerright">
 					<p>Support</p>
-					<p>Privacy Policy</p>
+					<p onClick={privacyroute}>Privacy Policy</p>
 					<p>Terms of Services</p>
 				</div>
 			</div>

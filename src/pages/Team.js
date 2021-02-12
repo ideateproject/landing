@@ -14,7 +14,7 @@ function Team() {
 	const history = useHistory();
 
 	const loginroute = () => {
-		let path = `/signin`;
+		let path = `/login`;
 		history.push(path);
 	};
 
@@ -175,7 +175,7 @@ function Team() {
 				</div>
 				<div className="team__footerright">
 					<p>Support</p>
-					<p>Privacy Policy</p>
+					<p onClick={privacyroute}>Privacy Policy</p>
 					<p>Terms of Services</p>
 				</div>
 			</div>
