@@ -23,11 +23,6 @@ import platform_img2 from '../img/platform/platform_img2.png';
 function Home() {
 	const history = useHistory();
 
-	const loginroute = () => {
-		let path = `https://staging.ideateproject.org`;
-		history.push(path);
-	};
-
 	const teamroute = () => {
 		let path = `/team#nav`;
 		history.push(path);
@@ -68,8 +63,8 @@ function Home() {
 							<a href="#contact">Contact Us</a>
 						</li>
 						<li>
-							<button className="signin__btn" onClick={loginroute}>
-								SIGN IN
+							<button className="signin__btn">
+								<a href="https://staging.ideateproject.org">SIGN IN</a>
 							</button>
 						</li>
 					</ul>
@@ -102,7 +97,9 @@ function Home() {
 					<p className="middle__main__tagline"> or </p>
 					<p className="bottom__main__tagline">Meet co founders, apply for funding, and launch your own startup</p>
 					<div className="main__button">
-						<button onClick={loginroute}>SIGN IN</button>
+						<button className="signin__btn">
+							<a href="https://staging.ideateproject.org">SIGN IN</a>
+						</button>
 					</div>
 				</div>
 				<img src={ellipse} alt="White Circle" className="white__ellipse" />
@@ -267,15 +264,16 @@ function Home() {
 
 			<div className="app__signup">
 				<div className="app__signuptext">
-					<p>Sign up for access to Ideate.</p>
+					<p>Sign up for access to our ideate.</p>
 					<p>
 						Share your ideas to find collaborators and comment on the
 						ideas of others.
 					</p>
 				</div>
 				<div className="app__signupbtn">
-					<button onClick={loginroute}>SIGN IN</button>
-				</div>
+					<button className="signin__btn">
+						<a href="https://staging.ideateproject.org">SIGN IN</a>
+					</button>				</div>
 			</div>
 
 			<div id="contact" className="app__footer">

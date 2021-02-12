@@ -26,6 +26,12 @@
 	list-style: none;
 }
 
+.main__button a,
+.signin__btn a{
+	color: white;
+	text-decoration: none;
+}
+
 .app__navbarLeft a,
 .app__navbarRight a {
 	font-size: 17px;
