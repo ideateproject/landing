@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
 import Team from './pages/Team.js';
-import Login from './pages/Login.js';
 import Privacy from './pages/Privacy.js';
 
 function App() {

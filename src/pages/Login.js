@@ -1,7 +1,4 @@
 import './Login.css';
-import React, { useState } from 'react';
-import { useHistory, Link } from 'react-router-dom';
-import ideate_logo from '../img/vectors/ideate_logo.png';
 
 function Login() {
 
