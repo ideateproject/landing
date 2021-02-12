@@ -191,6 +191,14 @@
 	line-height: 20px;
 }
 
+.team__footer a {
+	color: white;
+}
+
+.team__footer a:hover {
+	color: #efaf45;
+}
+
 .vector_left {
 	position: absolute;
 	left: 0;

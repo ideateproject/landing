@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
@@ -36,11 +37,6 @@ function Home() {
 
 	const teamroute = () => {
 		let path = `/team#nav`;
-		history.push(path);
-	};
-
-	const privacyroute = () => {
-		let path = `/privacy`;
 		history.push(path);
 	};
 
@@ -351,8 +347,8 @@ function Home() {
 				</div>
 				<div className="app__footerright">
 					<p>Support</p>
-					<p onClick={privacyroute}>Privacy Policy</p>
-					<p>Terms of Services</p>
+					<Link to="/Privacy">Privacy Policy</Link>
+					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>

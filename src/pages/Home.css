@@ -498,6 +498,14 @@ button:hover {
 	cursor: pointer;
 }
 
+.app__footer a {
+	color: white;
+}
+
+.app__footer a:hover {
+	color: #efaf45;
+}
+
 /*
 mobile optimization, hiding decorative elements when
 screen size is small

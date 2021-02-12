@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.privacy {
+.terms {
 	font-family: 'Lato', sans-serif;
 }
-.privacy__header {
+.terms__header {
 	background: linear-gradient(180deg, #182637 0%, rgba(34, 93, 161, 0) 238.01%),
 		#225da1;
 	width: 100vw;
@@ -11,7 +11,7 @@
 	color: white;
 }
 
-.privacy__navbar {
+.terms__navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -20,24 +20,24 @@
 	line-height: 20px;
 }
 
-.privacy__navbar img:hover {
+.terms__navbar img:hover {
 	cursor: pointer;
 }
 
-.privacy__navbar li {
+.terms__navbar li {
 	list-style: none;
 }
 
-.privacy__navbarLeft a,
-.privacy__navbarRight a {
+.terms__navbarLeft a,
+.terms__navbarRight a {
 	font-size: 17px;
 	text-decoration: none;
 	color: #f4f4f4;
 	font-weight: 500;
 }
 
-.privacy__navbarLeft a::after,
-.privacy__navbarRight a::after {
+.terms__navbarLeft a::after,
+.terms__navbarRight a::after {
 	content: '';
 	display: block;
 	width: 0;
@@ -46,12 +46,12 @@
 	transition: width 0.3s;
 }
 
-.privacy__navbarLeft a:hover::after,
-.privacy__navbarRight a:hover::after {
+.terms__navbarLeft a:hover::after,
+.terms__navbarRight a:hover::after {
 	width: 100%;
 }
 
-.privacy__navbarLeft {
+.terms__navbarLeft {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -60,7 +60,7 @@
 	padding-left: 20px;
 }
 
-.privacy__navbarRight {
+.terms__navbarRight {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -69,7 +69,7 @@
 	padding-right: 20px;
 }
 
-.privacy__signinbtn {
+.terms__signinbtn {
 	background: #efaf45;
 	border-radius: 5px;
 	padding: 10px 25px;
@@ -79,12 +79,12 @@
 	border: none;
 }
 
-.privacy__title {
+.terms__title {
 	padding-top: 150px;
 	padding-bottom: 100px;
 }
 
-.privacy__title p {
+.terms__title p {
 	color: white;
 	font-weight: normal;
 	font-size: 80px;
@@ -92,18 +92,18 @@
 	text-align: center;
 }
 
-.privacy__main {
+.terms__main {
 	background: #e5e5e5;
 	padding: 0 12vw;
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
-.privacy__main p {
+.terms__main p {
 	padding-left: 50px;
 }
 
-.privacy__main h1 {
+.terms__main h1 {
 	color: black;
 	font-weight: normal;
 	font-size: 35px;
@@ -112,15 +112,15 @@
 	border-bottom: 1px solid black;
 }
 
-.privacy__main span {
+.terms__main span {
 	font-weight: bold;
 }
 
-.privacy__main ul {
+.terms__main ul {
 	padding-left: 50px;
 }
 
-.privacy__main h2 {
+.terms__main h2 {
 	color: black;
 	font-weight: bold;
 	font-size: 17px;
@@ -128,7 +128,7 @@
 	text-align: left;
 }
 
-.privacy__main h3 {
+.terms__main h3 {
 	color: black;
 	font-weight: bold;
 	font-size: 15px;
@@ -136,11 +136,11 @@
 	text-align: left;
 }
 
-.privacy__descimg {
+.terms__descimg {
 	width: 25%;
 }
 
-.privacy__footer {
+.terms__footer {
 	background: #182637;
 	display: flex;
 	justify-content: space-between;
@@ -152,31 +152,31 @@
 	font-family: 'Lato', sans-serif;
 }
 
-.privacy__footerleft img {
+.terms__footerleft img {
 	padding-bottom: 25px;
 }
 
-.privacy__footerleft p {
+.terms__footerleft p {
 	font-size: 15px;
 	line-height: 15px;
 }
 
-.privacy__footerright {
+.terms__footerright {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 40%;
 }
 
-.privacy__footerright p {
+.terms__footerright p {
 	font-size: 15px;
 	line-height: 20px;
 }
 
-.privacy__footer a {
+.terms__footer a{
 	color: white;
 }
 
-	.privacy__footer a:hover {
-		color: #efaf45;
-	}
+.terms__footer a:hover {
+	color: #efaf45;
+}
