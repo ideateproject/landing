@@ -363,33 +363,6 @@
 	line-height: 25px;
 }
 
-.app__team {
-	padding-top: 50px;
-}
-
-.app__teamRowOne,
-.app__teamRowTwo {
-	margin-bottom: 50px;
-}
-
-.app__teamRowOne,
-.app__teamRowTwo {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.app__teamRowOne p,
-.app__teamRowTwo p {
-	text-align: center;
-	padding-top: 20px;
-}
-
-.app__teamRowOne p:first-child,
-.app__teamRowTwo p:first-child {
-	font-size: 50px;
-}
-
 .app__meetTheTeamButton {
 	margin-top: 80px;
 	display: flex;
