@@ -1,6 +1,7 @@
 import './Team.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ideate_logo from '../img/vectors/ideate_logo.png';
 import jacob from '../img/team/jacob_dodd.png';
 import thomas from '../img/team/thomas_jankowski.png';
@@ -20,11 +21,6 @@ function Team() {
 
 	const homeroute = () => {
 		let path = `/`;
-		history.push(path);
-	};
-	
-	const privacyroute = () => {
-		let path = `/privacy`;
 		history.push(path);
 	};
 
@@ -180,8 +176,8 @@ function Team() {
 				</div>
 				<div className="team__footerright">
 					<p>Support</p>
-					<p onClick={privacyroute}>Privacy Policy</p>
-					<p>Terms of Services</p>
+					<Link to="/Privacy">Privacy Policy</Link>
+					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>

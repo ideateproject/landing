@@ -1,8 +1,8 @@
 import './Privacy.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ideate_logo from '../img/vectors/ideate_logo.png';
-import vector_left from '../img/vectors/vector_team.png';
 
 function Privacy() {
 	const history = useHistory();
@@ -59,7 +59,6 @@ function Privacy() {
 					<p>Privacy Policy</p>
 				</div>
 			</div>
-			<img className="vector_left" src={vector_left} alt="A Vector" />
 			<div className="privacy__main">
 				Last updated: January 6, 2021<br /><br />
 					This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.<br /><br />
@@ -549,8 +548,8 @@ function Privacy() {
 				</div>
 				<div className="privacy__footerright">
 					<p>Support</p>
-					<p>Privacy Policy</p>
-					<p>Terms of Services</p>
+					<Link to="/Privacy">Privacy Policy</Link>
+					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>
