@@ -8,6 +8,9 @@ import vector_right_up from '../img/vectors/Vector_3.png';
 import vector_right_down from '../img/vectors/Vector_4.png';
 import vector_middle_left from '../img/vectors/Vector_5.png';
 import vector_middle_right from '../img/vectors/Vector_6.png';
+import network from '../img/icons/network.png'
+import users from '../img/icons/users.png'
+import school from '../img/icons/school.png'
 import ellipse from '../img/vectors/Ellipse_1.png';
 import expand_arrow from '../img/vectors/expand_arrow.png';
 import rectangle from '../img/vectors/Rectangle.png';
@@ -165,30 +168,59 @@ function Home() {
 						Ideate <strong>connects</strong> you to the entire technology ecosystem
 					</p>
 				</div>
-				<div className="app__contentParts">
-					<div className="app__contentPartOne">
-						<h2>Individuals</h2>
-						<p>
-							Find internships & jobs in tech or meet co founders,
-							apply for funding, and launch your own startup
-						</p>
-					</div>
-					<div className="app__contentPartTwo">
-						<h2>Educators</h2>
-						<p>
-							Improve student success through real time analytics on your
-							students alongside a host of educational modules and internship
-							and job opportunities
-						</p>
-					</div>
-					<div className="app__contentPartThree">
-						<h2>Employers</h2>
-						<p>
-							Get access to diverse, pre vetted talent in tech, while decreasing
-							hiring times by 50% through our platform
-						</p>
-					</div>
-				</div>
+				<Container>
+					<Row>
+						<Col>
+							<div className="center_image">
+								<img 
+									src={users}
+									className="network"
+									alt="Networking"
+								/>
+							</div>
+							<div className="platform_description">
+								<h2>Individuals</h2>
+								<p>
+									Find internships & jobs in tech or meet co founders,
+									apply for funding, and launch your own startup
+								</p>
+							</div>
+						</Col>
+						<Col>
+							<div className="center_image">
+							<img
+								src={school}
+								className="network"
+								alt="Networking"
+							/>
+							</div>
+							<div className="platform_description">				
+								<h2>Educators</h2>
+								<p>
+									Improve student success through real time analytics on your
+									students alongside a host of educational modules and internship
+									and job opportunities
+								</p>
+							</div>			
+						</Col>
+						<Col>
+							<div className="center_image">
+								<img
+									src={network}
+									className="network"
+									alt="Networking"
+								/>
+							</div>
+							<div className="platform_description">
+								<h2>Employers</h2>
+								<p>
+									Get access to diverse, pre vetted talent in tech, while decreasing
+									hiring times by 50% through our platform
+								</p>
+							</div>
+						</Col>
+					</Row>
+				</Container>
 			</div>
 			<div id="about" className="app__aboutUs">
 				<div className="app__aboutUsTitle">
@@ -211,9 +243,9 @@ function Home() {
 				<Container fluid>
 					<Row className="justify-content-md-center">
 						<Col>
-							<div className="team_member">
+							<div className="center_image">
 								<img src={tammy} alt="Tammy Clottey" />
-								<div className="description">
+								<div className="team_description">
 									<p>
 										<strong>Tammy Clottey</strong>
 									</p>
@@ -222,9 +254,9 @@ function Home() {
 							</div>
 						</Col>
 						<Col>
-							<div className="team_member">
+							<div className="center_image">
 								<img src={jacob} alt="Jacob Dodd" />
-								<div className="description">
+								<div className="team_description">
 									<p>
 										<strong>Jacob Dodd</strong>
 									</p>
@@ -233,9 +265,9 @@ function Home() {
 							</div>
 						</Col>
 						<Col>
-							<div className="team_member">
+							<div className="center_image">
 								<img src={thomas} alt="Thomas Jankowski" />
-								<div className="description">
+								<div className="team_description">
 									<p>
 										<strong>Thomas Jankowski</strong>
 									</p>
@@ -248,9 +280,9 @@ function Home() {
 				<Container fluid>
 					<Row className="justify-content-md-center">
 						<Col>
-							<div className="team_member">
+							<div className="center_image">
 								<img src={adam} alt="Adam Kier" />
-								<div className="description">
+								<div className="team_description">
 									<p>
 										<strong>Adam Krier</strong>
 									</p>
@@ -259,9 +291,9 @@ function Home() {
 							</div>
 						</Col>
 						<Col>
-							<div className="team_member">
+							<div className="center_image">
 								<img src={matt} alt="Matt Liu" />
-								<div className="description">
+								<div className="team_description">
 									<p>
 										<strong>Matt Liu</strong>
 									</p>
@@ -270,9 +302,9 @@ function Home() {
 							</div>
 						</Col>
 						<Col>
-							<div className="team_member">
+							<div className="center_image">
 								<img src={chandler} alt="Chandler Malone" />
-								<div className="description">
+								<div className="team_description">
 									<p>
 										<strong>Chandler Malone</strong>
 									</p>
