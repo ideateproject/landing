@@ -8,6 +8,9 @@ import vector_right_up from '../img/vectors/Vector_3.png';
 import vector_right_down from '../img/vectors/Vector_4.png';
 import vector_middle_left from '../img/vectors/Vector_5.png';
 import vector_middle_right from '../img/vectors/Vector_6.png';
+import network from '../img/icons/network.png'
+import users from '../img/icons/users.png'
+import school from '../img/icons/school.png'
 import ellipse from '../img/vectors/Ellipse_1.png';
 import expand_arrow from '../img/vectors/expand_arrow.png';
 import rectangle from '../img/vectors/Rectangle.png';
@@ -19,9 +22,17 @@ import chandler from '../img/team/chandler_malone.png';
 import tammy from '../img/team/tammy.png';
 import platform_img1 from '../img/platform/platform_img1.png';
 import platform_img2 from '../img/platform/platform_img2.png';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 
 function Home() {
 	const history = useHistory();
+
+	const loginroute = () => {
+		let path = `/login`;
+		history.push(path);
+	};
 
 	const teamroute = () => {
 		let path = `/team#nav`;
@@ -68,8 +79,8 @@ function Home() {
 							<a href="#contact">Contact Us</a>
 						</li>
 						<li>
-							<button className="signin__btn">
-								<a href="https://staging.ideateproject.org">SIGN IN</a>
+							<button className="signin__btn" onClick={loginroute}>
+								SIGN IN
 							</button>
 						</li>
 					</ul>
@@ -102,9 +113,7 @@ function Home() {
 					<p className="middle__main__tagline"> or </p>
 					<p className="bottom__main__tagline">Meet co founders, apply for funding, and launch your own startup</p>
 					<div className="main__button">
-						<button className="signin__btn">
-							<a href="https://staging.ideateproject.org">SIGN IN</a>
-						</button>
+						<button onClick={loginroute}>SIGN IN</button>
 					</div>
 				</div>
 				<img src={ellipse} alt="White Circle" className="white__ellipse" />
@@ -159,30 +168,59 @@ function Home() {
 						Ideate <strong>connects</strong> you to the entire technology ecosystem
 					</p>
 				</div>
-				<div className="app__contentParts">
-					<div className="app__contentPartOne">
-						<h2>Individuals</h2>
-						<p>
-							Find internships & jobs in tech or meet co founders,
-							apply for funding, and launch your own startup
-						</p>
-					</div>
-					<div className="app__contentPartTwo">
-						<h2>Educators</h2>
-						<p>
-							Improve student success through real time analytics on your 
-							students alongside a host of educational modules and internship 
-							and job opportunities
-						</p>
-					</div>
-					<div className="app__contentPartThree">
-						<h2>Employers</h2>
-						<p>
-							Get access to diverse, pre vetted talent in tech, while decreasing 
-							hiring times by 50% through our platform
-						</p>
-					</div>
-				</div>
+				<Container>
+					<Row>
+						<Col>
+							<div className="center_image">
+								<img 
+									src={users}
+									className="network"
+									alt="Networking"
+								/>
+							</div>
+							<div className="platform_description">
+								<h2>Individuals</h2>
+								<p>
+									Find internships & jobs in tech or meet co founders,
+									apply for funding, and launch your own startup
+								</p>
+							</div>
+						</Col>
+						<Col>
+							<div className="center_image">
+							<img
+								src={school}
+								className="network"
+								alt="Networking"
+							/>
+							</div>
+							<div className="platform_description">				
+								<h2>Educators</h2>
+								<p>
+									Improve student success through real time analytics on your
+									students alongside a host of educational modules and internship
+									and job opportunities
+								</p>
+							</div>			
+						</Col>
+						<Col>
+							<div className="center_image">
+								<img
+									src={network}
+									className="network"
+									alt="Networking"
+								/>
+							</div>
+							<div className="platform_description">
+								<h2>Employers</h2>
+								<p>
+									Get access to diverse, pre vetted talent in tech, while decreasing
+									hiring times by 50% through our platform
+								</p>
+							</div>
+						</Col>
+					</Row>
+				</Container>
 			</div>
 			<div id="about" className="app__aboutUs">
 				<div className="app__aboutUsTitle">
@@ -202,54 +240,80 @@ function Home() {
 						opportunities for funding, internships, and jobs.
 					</p>
 				</div>
-				<div className="app__team">
-					<div className="app__teamRowOne">
-						<div className="app__memberOne">
-							<img src={tammy} alt="Tammy Clottey" />
-							<p>
-								<strong>Tammy Clottey</strong>
-							</p>
-							<p>Head of Special Projects</p>
-						</div>
-						<div className="app__memberTwo">
-							<img src={jacob} alt="Jacob Dodd" />
-							<p>
-								<strong>Jacob Dodd</strong>
-							</p>
-							<p>Head of Product</p>
-						</div>
-						<div className="app__memberThree">
-							<img src={thomas} alt="Thomas Jankowski" />
-							<p>
-								<strong>Thomas Jankowski</strong>
-							</p>
-							<p>Head of Digital</p>
-						</div>
-					</div>
-					<div className="app__teamRowTwo">
-						<div className="app__memberFour">
-							<img src={adam} alt="Adam Kier" />
-							<p>
-								<strong>Adam Krier</strong>
-							</p>
-							<p>Chief Technical Officer</p>
-						</div>
-						<div className="app__memberFive">
-							<img src={matt} alt="Matt Liu" />
-							<p>
-								<strong>Matt Liu</strong>
-							</p>
-							<p>Head of Business Development</p>
-						</div>
-						<div className="app__memberSix">
-							<img src={chandler} alt="Chandler Malone" />
-							<p>
-								<strong>Chandler Malone</strong>
-							</p>
-							<p>Chief Executive Officer</p>
-						</div>
-					</div>
-				</div>
+				<Container fluid>
+					<Row className="justify-content-md-center">
+						<Col>
+							<div className="center_image">
+								<img src={tammy} alt="Tammy Clottey" />
+								<div className="team_description">
+									<p>
+										<strong>Tammy Clottey</strong>
+									</p>
+									<p>Head of Special Projects</p>
+								</div>
+							</div>
+						</Col>
+						<Col>
+							<div className="center_image">
+								<img src={jacob} alt="Jacob Dodd" />
+								<div className="team_description">
+									<p>
+										<strong>Jacob Dodd</strong>
+									</p>
+									<p>Head of Product</p>
+								</div>
+							</div>
+						</Col>
+						<Col>
+							<div className="center_image">
+								<img src={thomas} alt="Thomas Jankowski" />
+								<div className="team_description">
+									<p>
+										<strong>Thomas Jankowski</strong>
+									</p>
+									<p>Head of Digital</p>
+								</div>
+							</div>
+						</Col>
+					</Row>
+				</Container>
+				<Container fluid>
+					<Row className="justify-content-md-center">
+						<Col>
+							<div className="center_image">
+								<img src={adam} alt="Adam Kier" />
+								<div className="team_description">
+									<p>
+										<strong>Adam Krier</strong>
+									</p>
+									<p>Chief Technical Officer</p>
+								</div>
+							</div>
+						</Col>
+						<Col>
+							<div className="center_image">
+								<img src={matt} alt="Matt Liu" />
+								<div className="team_description">
+									<p>
+										<strong>Matt Liu</strong>
+									</p>
+									<p>Head of Business Development</p>
+								</div>
+							</div>
+						</Col>
+						<Col>
+							<div className="center_image">
+								<img src={chandler} alt="Chandler Malone" />
+								<div className="team_description">
+									<p>
+										<strong>Chandler Malone</strong>
+									</p>
+									<p>Chief Executive Officer</p>
+								</div>
+							</div>
+						</Col>
+					</Row>
+				</Container>
 				<div className="app__meetTheTeamButton">
 					<button onClick={teamroute}>Meet our team</button>
 				</div>
@@ -269,16 +333,15 @@ function Home() {
 
 			<div className="app__signup">
 				<div className="app__signuptext">
-					<p>Sign up for access to our ideate.</p>
+					<p>Sign up for access to our beta.</p>
 					<p>
 						Share your ideas to find collaborators and comment on the
 						ideas of others.
 					</p>
 				</div>
 				<div className="app__signupbtn">
-					<button className="signin__btn">
-						<a href="https://staging.ideateproject.org">SIGN IN</a>
-					</button>				</div>
+					<button onClick={loginroute}>SIGN IN</button>
+				</div>
 			</div>
 
 			<div id="contact" className="app__footer">
