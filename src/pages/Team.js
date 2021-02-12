@@ -22,6 +22,11 @@ function Team() {
 		let path = `/`;
 		history.push(path);
 	};
+	
+	const privacyroute = () => {
+		let path = `/privacy`;
+		history.push(path);
+	};
 
 	window.scrollTo(0, 0);
 
