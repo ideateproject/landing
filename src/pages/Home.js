@@ -35,10 +35,10 @@ function Home() {
 		history.push(path);
 	};
 
-	const teamroute = () => {
-		let path = `/team#nav`;
-		history.push(path);
-	};
+	// const teamroute = () => {
+	// 	let path = `/team#nav`;
+	// 	history.push(path);
+	// };
 
 	const homeroute = () => {
 		let path = `/`;
@@ -310,9 +310,9 @@ function Home() {
 						</Col>
 					</Row>
 				</Container>
-				<div className="app__meetTheTeamButton">
+				{/* <div className="app__meetTheTeamButton">
 					<button onClick={teamroute}>Meet our team</button>
-				</div>
+				</div> */}
 			</div>
 			<div className="app__rectangleSVG">
 				<img src={rectangle} alt="rectangle" />
