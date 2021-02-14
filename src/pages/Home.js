@@ -236,7 +236,7 @@ function Home() {
 						opportunities for funding, internships, and jobs.
 					</p>
 				</div>
-				<Container fluid>
+				{/* <Container fluid>
 					<Row className="justify-content-md-center">
 						<Col>
 							<div className="center_image">
@@ -309,7 +309,7 @@ function Home() {
 							</div>
 						</Col>
 					</Row>
-				</Container>
+				</Container> */}
 				{/* <div className="app__meetTheTeamButton">
 					<button onClick={teamroute}>Meet our team</button>
 				</div> */}
