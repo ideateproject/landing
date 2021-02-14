@@ -15,12 +15,12 @@ import school from '../img/icons/school.png'
 import ellipse from '../img/vectors/Ellipse_1.png';
 import expand_arrow from '../img/vectors/expand_arrow.png';
 import rectangle from '../img/vectors/Rectangle.png';
-import jacob from '../img/team/jacob_dodd.png';
-import thomas from '../img/team/thomas_jankowski.png';
-import adam from '../img/team/adam_kier.png';
-import matt from '../img/team/matt_liu.png';
-import chandler from '../img/team/chandler_malone.png';
-import tammy from '../img/team/tammy.png';
+// import jacob from '../img/team/jacob_dodd.png';
+// import thomas from '../img/team/thomas_jankowski.png';
+// import adam from '../img/team/adam_kier.png';
+// import matt from '../img/team/matt_liu.png';
+// import chandler from '../img/team/chandler_malone.png';
+// import tammy from '../img/team/tammy.png';
 import platform_img1 from '../img/platform/platform_img1.png';
 import platform_img2 from '../img/platform/platform_img2.png';
 import Row from 'react-bootstrap/Row'
@@ -35,10 +35,10 @@ function Home() {
 		history.push(path);
 	};
 
-	const teamroute = () => {
-		let path = `/team#nav`;
-		history.push(path);
-	};
+	// const teamroute = () => {
+	// 	let path = `/team#nav`;
+	// 	history.push(path);
+	// };
 
 	const homeroute = () => {
 		let path = `/`;
@@ -236,7 +236,7 @@ function Home() {
 						opportunities for funding, internships, and jobs.
 					</p>
 				</div>
-				<Container fluid>
+				{/* <Container fluid>
 					<Row className="justify-content-md-center">
 						<Col>
 							<div className="center_image">
@@ -309,10 +309,10 @@ function Home() {
 							</div>
 						</Col>
 					</Row>
-				</Container>
-				<div className="app__meetTheTeamButton">
+				</Container> */}
+				{/* <div className="app__meetTheTeamButton">
 					<button onClick={teamroute}>Meet our team</button>
-				</div>
+				</div> */}
 			</div>
 			<div className="app__rectangleSVG">
 				<img src={rectangle} alt="rectangle" />

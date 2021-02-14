@@ -375,8 +375,11 @@
 .app__aboutUsDescTwo {
 	text-align: center;
 	padding: 0 13vw;
-	margin-bottom: 60px;
-	line-height: 25px;
+	margin-bottom: 0px;
+	line-height: 50px;
+}
+.app__aboutUsDescTwo p {
+	margin-bottom: 0px;
 }
 
 .app__meetTheTeamButton {

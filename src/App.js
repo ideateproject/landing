@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
-import Team from './pages/Team.js';
+// import Team from './pages/Team.js';
 import Privacy from './pages/Privacy.js';
 import Terms from './pages/Terms.js';
 
@@ -10,9 +10,9 @@ function App() {
 		<Router>
 			<div className="app">
 				<Switch>
-					<Route path="/team">
+					{/* <Route path="/team">
 						<Team />
-					</Route>
+					</Route> */}
 					<Route path='/login' component={() => {
 						window.location.href = 'https://staging.ideateproject.org/';
 						return null;
