@@ -368,7 +368,7 @@
 .app__aboutUsDescOne {
 	text-align: center;
 	padding: 0 13vw;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 	line-height: 50px;
 }
 
@@ -378,7 +378,8 @@
 	margin-bottom: 0px;
 	line-height: 50px;
 }
-.app__aboutUsDescTwo p {
+.app__aboutUsDescTwo p,
+.app__aboutUsDescOne p {
 	margin-bottom: 0px;
 }
 
