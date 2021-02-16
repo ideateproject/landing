@@ -224,16 +224,11 @@ function Home() {
 				</div>
 				<div className="app__aboutUsDescOne">
 					<p>
-						Ideate <strong>connects</strong> students with the top student
-						entrepreneurs, engineers, designers, and scientists across the
-						country.{' '}
-					</p>
-				</div>
-				<div className="app__aboutUsDescTwo">
-					<p>
-						We help them <strong>maximize their potential</strong> by
-						offering access to content from industry leaders,
-						opportunities for funding, internships, and jobs.
+					Ideate seeks to provide access to exclusive jobs and internships in the
+					 technology sector to individuals who need it most -- regardless of race, age,
+					  gender, or academic pedigree. We strive to empower people of all backgrounds to 
+					  flourish by providing them with the community, educational content, and opportunities 
+					  necessary for economic mobility and long term career success.{' '}
 					</p>
 				</div>
 				{/* <Container fluid>
