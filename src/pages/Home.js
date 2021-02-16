@@ -58,10 +58,10 @@ function Home() {
 							/>
 						</li>
 						<li>
-							<a href="#descriptions">For Students</a>
+							<a href="#descriptions">For Individuals</a>
 						</li>
 						<li>
-							<a href="#descriptions">For Universities</a>
+							<a href="#descriptions">For Educators</a>
 						</li>
 						<li>
 							<a href="#descriptions">For Employers</a>
@@ -168,7 +168,7 @@ function Home() {
 					<Row>
 						<Col>
 							<div className="center_image">
-								<img 
+								<img
 									src={users}
 									className="network"
 									alt="Networking"
@@ -184,20 +184,20 @@ function Home() {
 						</Col>
 						<Col>
 							<div className="center_image">
-							<img
-								src={school}
-								className="network"
-								alt="Networking"
-							/>
+								<img
+									src={school}
+									className="network"
+									alt="Networking"
+								/>
 							</div>
-							<div className="platform_description">				
+							<div className="platform_description">
 								<h2>Educators</h2>
 								<p>
 									Improve student success through real time analytics on your
 									students alongside a host of educational modules and internship
 									and job opportunities
 								</p>
-							</div>			
+							</div>
 						</Col>
 						<Col>
 							<div className="center_image">
@@ -224,10 +224,10 @@ function Home() {
 				</div>
 				<div className="app__aboutUsDescOne">
 					<p>
-					Ideate seeks to provide access to exclusive jobs and internships in the
-					 technology sector to individuals who need it most -- regardless of race, age,
-					  gender, or academic pedigree. We strive to empower people of all backgrounds to 
-					  flourish by providing them with the community, educational content, and opportunities 
+						Ideate seeks to provide access to exclusive jobs and internships in the
+						technology sector to individuals who need it most -- regardless of race, age,
+						gender, or academic pedigree. We strive to empower people of all backgrounds to
+						flourish by providing them with the community, educational content, and opportunities
 					  necessary for economic mobility and long term career success.{' '}
 					</p>
 				</div>
@@ -324,7 +324,7 @@ function Home() {
 
 			<div className="app__signup">
 				<div className="app__signuptext">
-					<p>Sign up for access to our beta.</p>
+					<p>Sign up for access to Ideate.</p>
 					<p>
 						Share your ideas to find collaborators and comment on the
 						ideas of others.
