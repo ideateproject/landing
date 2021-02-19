@@ -345,7 +345,7 @@ function Home() {
 					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
 				</div>
 				<div className="app__footerright">
-					<p>Support</p>
+					<Link>Support</Link>
 					<Link to="/Privacy">Privacy Policy</Link>
 					<Link to="/Terms">Terms of Services</Link>
 				</div>
