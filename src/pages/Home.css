@@ -429,6 +429,16 @@
 	filter: drop-shadow(0px 5.94456px 35.6674px rgba(0, 0, 0, 0.1));
 }
 
+.app__platformimgdown img {
+	width: 75%;
+	max-width: 750px;
+}
+
+.app__platformimgtop img {
+	width: 85%;
+	max-width: 850px;	
+}
+
 .app__signup {
 	display: flex;
 	justify-content: space-between;
