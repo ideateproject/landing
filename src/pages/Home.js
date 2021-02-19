@@ -51,11 +51,13 @@ function Home() {
 				<div id="nav" className="app__navbar">
 					<ul className="app__navbarLeft">
 						<li>
-							<img
-								onClick={homeroute}
-								src={ideate_logo}
-								alt="The Ideate Project Logo"
-							/>
+							<a href="/#">
+								<img
+									onClick={homeroute}
+									src={ideate_logo}
+									alt="The Ideate Project Logo"
+								/>
+							</a>
 						</li>
 						<li>
 							<a href="#descriptions">For Individuals</a>
