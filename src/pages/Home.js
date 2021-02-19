@@ -112,17 +112,19 @@ function Home() {
 						<button onClick={loginroute}>SIGN IN</button>
 					</div>
 				</div>
-				<img src={ellipse} alt="White Circle" className="white__ellipse" />
-				<img
-					src={expand_arrow}
-					alt="Down Arrow"
-					className="expand__arrowOne"
-				/>
-				<img
-					src={expand_arrow}
-					alt="Down Arrow"
-					className="expand__arrowTwo"
-				/>
+				<a href="#descriptions">
+					<img src={ellipse} alt="White Circle" className="white__ellipse" />
+					<img
+						src={expand_arrow}
+						alt="Down Arrow"
+						className="expand__arrowOne"
+					/>
+					<img
+						src={expand_arrow}
+						alt="Down Arrow"
+						className="expand__arrowTwo"
+					/>
+				</a>
 			</div>
 			<div className="app__about">
 				<div className="app__aboutText">
