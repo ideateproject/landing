@@ -175,7 +175,7 @@ function Team() {
 					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
 				</div>
 				<div className="team__footerright">
-					<p>Support</p>
+					{/*<Link to="/Contact">Contact Us</Link>*/}
 					<Link to="/Privacy">Privacy Policy</Link>
 					<Link to="/Terms">Terms of Services</Link>
 				</div>
