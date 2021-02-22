@@ -45,9 +45,9 @@ function Privacy() {
 						<li>
 							<a href="/#about">About Us</a>
 						</li>
-						<li>
+						{/*<li>
 							<a href="/#contact">Contact Us</a>
-						</li>
+						</li>*/}
 						<li>
 							<button className="privacy__signinbtn" onClick={loginroute}>
 								SIGN IN
@@ -547,7 +547,7 @@ function Privacy() {
 					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
 				</div>
 				<div className="privacy__footerright">
-					<p>Support</p>
+					{/*<Link to="/Contact">Contact Us</Link>*/}
 					<Link to="/Privacy">Privacy Policy</Link>
 					<Link to="/Terms">Terms of Services</Link>
 				</div>

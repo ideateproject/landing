@@ -4,6 +4,7 @@ import Home from './pages/Home.js';
 // import Team from './pages/Team.js';
 import Privacy from './pages/Privacy.js';
 import Terms from './pages/Terms.js';
+//import Contact from './pages/Contact.js';
 
 function App() {
 	return (
@@ -23,6 +24,9 @@ function App() {
 					<Route path="/terms">
 						<Terms />
 					</Route>
+					{/* <Route path="/contact">
+						<Contact />
+					</Route> */}
 					<Route path="/">
 						<Home />
 					</Route>

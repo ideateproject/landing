@@ -1,6 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 import './Home.css';
 import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
@@ -73,9 +74,9 @@ function Home() {
 						<li>
 							<a href="#about">About Us</a>
 						</li>
-						<li>
+						{/*<li>
 							<a href="#contact">Contact Us</a>
-						</li>
+						</li>*/}
 						<li>
 							<button className="signin__btn" onClick={loginroute}>
 								SIGN IN
@@ -222,6 +223,9 @@ function Home() {
 					</Row>
 				</Container>
 			</div>
+			<Helmet>
+				<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=618c8400-6867-43e5-9c72-ba58648e5688"> </script>
+			</Helmet>
 			<div id="about" className="app__aboutUs">
 				<div className="app__aboutUsTitle">
 					<p>About Us</p>
@@ -345,7 +349,7 @@ function Home() {
 					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
 				</div>
 				<div className="app__footerright">
-					<Link>Support</Link>
+					{/*<Link to="/Contact">Contact Us</Link>*/}
 					<Link to="/Privacy">Privacy Policy</Link>
 					<Link to="/Terms">Terms of Services</Link>
 				</div>
