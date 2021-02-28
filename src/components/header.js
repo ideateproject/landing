@@ -1,8 +1,8 @@
 import React from 'react';
 
-class navBar extends React.Component{
-    render () {
-       return (<div id="nav" className="app__navbar">
+class navBar extends React.Component {
+    render() {
+        return (<div id="nav" className="app__navbar">
             <ul className="app__navbarLeft">
                 <li>
                     <img
@@ -30,7 +30,7 @@ class navBar extends React.Component{
                 </li>
                 <li>
                     <button className="signin__btn">
-                        <a href="https://staging.ideateproject.org">SIGN IN</a>
+                        <a href="http://student.ideateproject.com">SIGN IN</a>
                     </button>
                 </li>
             </ul>

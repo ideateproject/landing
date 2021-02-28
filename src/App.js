@@ -15,7 +15,7 @@ function App() {
 						<Team />
 					</Route> */}
 					<Route path='/login' component={() => {
-						window.location.href = 'https://staging.ideateproject.org/';
+						window.location.href = 'http://student.ideateproject.com/';
 						return null;
 					}} />
 					<Route path="/privacy">
