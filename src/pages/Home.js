@@ -108,8 +108,10 @@ function Home() {
 				{/* finished adding vector images */}
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
-					<p className="top__main__tagline">Ideate bridges the talent gap in the technology industry by
-					 providing access to internships and jobs to underrepresented individuals in tech. </p>
+					<p className="top__main__tagline">
+						Ideate bridges the talent gap in the technology industry by providing access
+					  <p>to internships and jobs to underrepresented individuals in tech.</p>
+					   </p>
 					
 					<div className="main__button">
 						<button onClick={loginroute}>SIGN IN</button>
@@ -229,8 +231,10 @@ function Home() {
 				</div>
 				<div className="app__aboutUsDescOne">
 					<p>
-					In the 1980’s, middle- and lower-income Americans were responsible for over 40% of the United States' GDP. Today, middle- and lower-income Americans account for less than 20% of the national GDP, while 53% of college graduates currently end up underemployed 6 months after graduation. 
+					In the 1980’s, middle- and lower-income Americans were responsible for over 40% of the United States' GDP.  Today, middle- and lower-income Americans account for less than 20% of the national GDP,  while 53% of college graduates currently end up underemployed 6 months after graduation. 
+					<p></p>
 					<p>Meanwhile, the technology sector is growing faster than ever, creating jobs and generational wealth at a rate we haven’t seen in our lifetimes. Unfortunately, there is currently not enough talent to support the technology industry’s growth, as we are set to have an 85 million person talent shortage by 2030.  </p>
+					<p> </p>
 					<p>Ideate is here to bridge this gap by providing access to the necessary credentials for individuals to get jobs in the tech industry ultimately gaining access to economic mobility and the American Dream, while helping technology companies address the ever-widening talent gap in the process.  </p>
 					</p>
 				</div>
