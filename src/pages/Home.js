@@ -162,7 +162,7 @@ function Home() {
 					alt="The vector on the middle right"
 				/>
 				<div id="descriptions" className="app__contentTitle">
-					<b>What we offer</b>
+					<b>How does Ideate work?</b>
 				</div>
 				<div className="app__contentDesc">
 					<p>
