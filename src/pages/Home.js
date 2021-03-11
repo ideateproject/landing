@@ -108,9 +108,9 @@ function Home() {
 				{/* finished adding vector images */}
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
-					<p className="top__main__tagline">Find internships & jobs in tech</p>
-					<p className="middle__main__tagline"> or </p>
-					<p className="bottom__main__tagline">Meet co founders, apply for funding, and launch your own startup</p>
+					<p className="top__main__tagline">Ideate bridges the talent gap in the technology industry by
+					 providing access to internships and jobs to underrepresented individuals in tech. </p>
+					
 					<div className="main__button">
 						<button onClick={loginroute}>SIGN IN</button>
 					</div>
@@ -165,9 +165,7 @@ function Home() {
 					<b>How does Ideate work?</b>
 				</div>
 				<div className="app__contentDesc">
-					<p>
-						Ideate <strong>connects</strong> you to the entire technology ecosystem
-					</p>
+				
 				</div>
 				<Container>
 					<Row>
@@ -180,10 +178,10 @@ function Home() {
 								/>
 							</div>
 							<div className="platform_description">
-								<h2>Individuals</h2>
+								<h2>1. Create an Ideate account</h2>
 								<p>
-									Find internships & jobs in tech or meet co founders,
-									apply for funding, and launch your own startup
+								Complete your Ideate profile and get access to a community of fellow founders, 
+								software engineers, ui/ux desigers and certifications. 
 								</p>
 							</div>
 						</Col>
@@ -196,11 +194,11 @@ function Home() {
 								/>
 							</div>
 							<div className="platform_description">
-								<h2>Educators</h2>
+								<h2>2. Complete Certifications</h2>
 								<p>
-									Improve student success through real time analytics on your
-									students alongside a host of educational modules and internship
-									and job opportunities
+								Complete certifications to show you’ve mastered various skills and differentiate
+								 yourself from other candidates. Each employer on Ideate lists the recommended 
+								 certifications to get hired in an entry-level role at their company.  
 								</p>
 							</div>
 						</Col>
@@ -213,10 +211,10 @@ function Home() {
 								/>
 							</div>
 							<div className="platform_description">
-								<h2>Employers</h2>
+								<h2>3. Find exclusive jobs, internships, and funding opportunities</h2>
 								<p>
-									Get access to diverse, pre vetted talent in tech, while decreasing
-									hiring times by 50% through our platform
+								Apply for internships, jobs, and funding opportunities posted by
+								 tech companies and investors looking to source specifically from Ideate.  
 								</p>
 							</div>
 						</Col>
@@ -228,15 +226,19 @@ function Home() {
 			</Helmet>
 			<div id="about" className="app__aboutUs">
 				<div className="app__aboutUsTitle">
-					<p>About Us</p>
+					<p>Our Mission</p>
 				</div>
 				<div className="app__aboutUsDescOne">
 					<p>
-						Ideate seeks to provide access to exclusive jobs and internships in the
-						technology sector to individuals who need it most -- regardless of race, age,
-						gender, or academic pedigree. We strive to empower people of all backgrounds to
-						flourish by providing them with the community, educational content, and opportunities
-					  necessary for economic mobility and long term career success.{' '}
+					In the 1980’s, middle- and lower-income Americans were responsible for over 40% of the United States' GDP. Today, middle- and lower-income Americans account for less than 20% of the national GDP, while 53% of college graduates currently end up underemployed 6 months after graduation. 
+
+ 
+
+Meanwhile, the technology sector is growing faster than ever, creating jobs and generational wealth at a rate we haven’t seen in our lifetimes. Unfortunately, there is currently not enough talent to support the technology industry’s growth, as we are set to have an 85 million person talent shortage by 2030. 
+
+ 
+
+Ideate is here to bridge this gap by providing access to the necessary credentials for individuals to get jobs in the tech industry ultimately gaining access to economic mobility and the American Dream, while helping technology companies address the ever-widening talent gap in the process.  
 					</p>
 				</div>
 				{/* <Container fluid>
