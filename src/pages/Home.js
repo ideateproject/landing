@@ -212,10 +212,10 @@ function Home() {
 								/>
 							</div>
 							<div className="platform_description">
-								<h2>3. Find jobs, internships, and funding</h2>
+								<h2>3. Find internships, jobs, and funding</h2>
 								<p>
 								Apply for exclusive opportunities posted by tech companies and investors looking
-								 to hire specifically from Ideate.  
+								 to source specifically from Ideate.  
 								</p>
 							</div>
 						</Col>
