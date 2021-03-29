@@ -1,60 +1,16 @@
 import './Terms.css';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ideate_logo from '../img/vectors/ideate_logo.png';
+import Header from '../components/Header'
 
 function Privacy() {
-	const history = useHistory();
-
-	const loginroute = () => {
-		let path = `/login`;
-		history.push(path);
-	};
-
-	const homeroute = () => {
-		let path = `/`;
-		history.push(path);
-	};
-
 	window.scrollTo(0, 0);
 
 	return (
 		<div className="terms">
 			<div className="terms__header">
-				<div id="nav" className="terms__navbar">
-					<ul className="terms__navbarLeft">
-						<li>
-							<img
-								onClick={homeroute}
-								src={ideate_logo}
-								alt="The Ideate Project Logo"
-							/>
-						</li>
-						<li>
-							<a href="/#descriptions">For Students</a>
-						</li>
-						<li>
-							<a href="/#descriptions">For Universities</a>
-						</li>
-						<li>
-							<a href="/#descriptions">For Employers</a>
-						</li>
-					</ul>
-					<ul className="terms__navbarRight">
-						<li>
-							<a href="/#about">About Us</a>
-						</li>
-						{/*<li>
-							<a href="/#contact">Contact Us</a>
-						</li>*/}
-						<li>
-							<button className="terms__signinbtn" onClick={loginroute}>
-								SIGN IN
-							</button>
-						</li>
-					</ul>
-				</div>
+				<Header isHome={ false } />
 				<div className="terms__title">
 					<p>Terms and Conditions</p>
 				</div>
