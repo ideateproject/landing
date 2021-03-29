@@ -1,42 +1,64 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
-class navBar extends React.Component {
-    render() {
-        return (<div id="nav" className="app__navbar">
+import './Header.css'
+import ideate_logo from '../img/vectors/ideate_logo.png';
+
+const Header = ({ isHome }) => {
+    const history = useHistory();
+
+	const loginroute = () => {
+		let path = `/login`;
+		history.push(path);
+	};
+
+	const homeroute = () => {
+		let path = `/`;
+		history.push(path);
+	};
+
+    // const teamroute = () => {
+	// 	let path = `/team#nav`;
+	// 	history.push(path);
+	// };
+
+    return (
+        <div id="nav" className={`app__navbar ${ isHome ? 'home__nav' : '' }`}>
             <ul className="app__navbarLeft">
                 <li>
-                    <img
-                        onClick={this.props.homeroute}
-                        src={this.props.ideate_logo}
-                        alt="The Ideate Project Logo"
-                    />
+                    <a href="/#">
+                        <img
+                            onClick={homeroute}
+                            src={ideate_logo}
+                            alt="The Ideate Project Logo"
+                        />
+                    </a>
                 </li>
                 <li>
-                    <a href="#descriptions">For Students</a>
+                    <a href="/#descriptions">For Individuals</a>
                 </li>
                 <li>
-                    <a href="#descriptions">For Universities</a>
+                    <a href="/#descriptions">For Educators</a>
                 </li>
                 <li>
-                    <a href="#descriptions">For Employers</a>
+                    <a href="/#descriptions">For Employers</a>
                 </li>
             </ul>
             <ul className="app__navbarRight">
                 <li>
-                    <a href="#about">About Us</a>
+                    <a href="/#about">About Us</a>
                 </li>
-                <li>
+                {/*<li>
                     <a href="#contact">Contact Us</a>
-                </li>
+                </li>*/}
                 <li>
-                    <button className="signin__btn">
-                        <a href="http://student.ideateproject.com">SIGN IN</a>
+                    <button className="signin__btn" onClick={loginroute}>
+                        SIGN IN
                     </button>
                 </li>
             </ul>
         </div>
-        );
-    }
+    )
 }
 
-export default navBar;
+export default Header

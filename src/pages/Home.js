@@ -27,6 +27,7 @@ import platform_img2 from '../img/platform/platform_img2.png';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
+import Header from '../components/Header'
 
 function Home() {
 	const history = useHistory();
@@ -36,54 +37,10 @@ function Home() {
 		history.push(path);
 	};
 
-	// const teamroute = () => {
-	// 	let path = `/team#nav`;
-	// 	history.push(path);
-	// };
-
-	const homeroute = () => {
-		let path = `/`;
-		history.push(path);
-	};
-
 	return (
 		<div className="app">
 			<div className="app__heading">
-				<div id="nav" className="app__navbar">
-					<ul className="app__navbarLeft">
-						<li>
-							<a href="/#">
-								<img
-									onClick={homeroute}
-									src={ideate_logo}
-									alt="The Ideate Project Logo"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#descriptions">For Individuals</a>
-						</li>
-						<li>
-							<a href="#descriptions">For Educators</a>
-						</li>
-						<li>
-							<a href="#descriptions">For Employers</a>
-						</li>
-					</ul>
-					<ul className="app__navbarRight">
-						<li>
-							<a href="#about">About Us</a>
-						</li>
-						{/*<li>
-							<a href="#contact">Contact Us</a>
-						</li>*/}
-						<li>
-							<button className="signin__btn" onClick={loginroute}>
-								SIGN IN
-							</button>
-						</li>
-					</ul>
-				</div>
+				<Header isHome={ true } />
 				{/* adding vector images */}
 				<img
 					src={vector_left_up}
