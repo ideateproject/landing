@@ -24,11 +24,6 @@
 	list-style: none;
 }
 
-.signin__btn a{
-	color: white;
-	text-decoration: none;
-}
-
 .app__navbarLeft a,
 .app__navbarRight a {
 	font-size: 17px;
@@ -60,20 +55,32 @@
 
 .app__navbarLeft {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-start;
 	align-items: center;
 	margin: 0;
-	width: 48%;
+	width: 70%;
 	padding-left: 20px;
+}
+
+.app__navbarLeft li {
+	padding-right: 5%;
+}
+
+.app__navbarLeft li:last-of-type {
+	padding: 0;
 }
 
 .app__navbarRight {
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
 	margin: 0;
-	width: 15%; /*30%*/
+	width: 30%;
 	padding-right: 20px;
+}
+
+.app__navbarRight li:last-of-type {
+	margin-left: 10%;
 }
 
 .signin__btn {
@@ -87,4 +94,13 @@
 .signin__btn a {
 	font-size: 14px;
 	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+/* mobile optimization, hiding nav bar when screen size is small */
+@media (max-width: 767px) {
+	.app__navbar {
+		display: none;
+	}
 }
