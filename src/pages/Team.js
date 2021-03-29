@@ -1,7 +1,5 @@
 import './Team.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ideate_logo from '../img/vectors/ideate_logo.png';
 import jacob from '../img/team/jacob_dodd.png';
 import thomas from '../img/team/thomas_jankowski.png';
 import adam from '../img/team/adam_kier.png';
@@ -123,17 +121,6 @@ function Team() {
 						affecting positive change and enhancing the projects, programs and organizations 
 						she's affiliated with.	
 					</p>
-				</div>
-			</div>
-			<div className="team__footer">
-				<div className="team__footerleft">
-					<img src={ideate_logo} alt="The Ideate Project Logo" />
-					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
-				</div>
-				<div className="team__footerright">
-					{/*<Link to="/Contact">Contact Us</Link>*/}
-					<Link to="/Privacy">Privacy Policy</Link>
-					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>

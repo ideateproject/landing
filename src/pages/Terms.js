@@ -1,7 +1,5 @@
 import './Terms.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ideate_logo from '../img/vectors/ideate_logo.png';
 import Header from '../components/Header'
 
 function Privacy() {
@@ -244,17 +242,6 @@ function Privacy() {
 				<ul>
 					<li>By email: support@ideateproject.com</li>
 				</ul>
-			</div>
-			<div className="terms__footer">
-				<div className="terms__footerleft">
-					<img src={ideate_logo} alt="The Ideate Project Logo" />
-					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
-				</div>
-				<div className="terms__footerright">
-					{/*<Link to="/Contact">Contact Us</Link>*/}
-					<Link to="/Privacy">Privacy Policy</Link>
-					<Link to="/Terms">Terms of Services</Link>
-				</div>
 			</div>
 		</div>
 	);

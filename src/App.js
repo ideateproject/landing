@@ -5,6 +5,7 @@ import Home from './pages/Home.js';
 import Privacy from './pages/Privacy.js';
 import Terms from './pages/Terms.js';
 //import Contact from './pages/Contact.js';
+import Footer from './components/Footer'
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 						<Home />
 					</Route>
 				</Switch>
+				<Footer />
 			</div>
 		</Router>
 	);

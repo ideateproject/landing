@@ -90,47 +90,6 @@
 	padding-bottom: 50px;
 }
 
-.team__footer {
-	background: #182637;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 10vw;
-	padding-top: 125px;
-	padding-bottom: 125px;
-	color: white;
-	font-family: 'Lato', sans-serif;
-}
-
-.team__footerleft img {
-	padding-bottom: 25px;
-}
-
-.team__footerleft p {
-	font-size: 15px;
-	line-height: 15px;
-}
-
-.team__footerright {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 40%;
-}
-
-.team__footerright p {
-	font-size: 15px;
-	line-height: 20px;
-}
-
-.team__footer a {
-	color: white;
-}
-
-.team__footer a:hover {
-	color: #efaf45;
-}
-
 .vector_left {
 	position: absolute;
 	left: 0;

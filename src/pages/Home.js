@@ -1,9 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import './Home.css';
-import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
 import vector_left_down from '../img/vectors/Vector_2.png';
 import vector_right_up from '../img/vectors/Vector_3.png';
@@ -27,7 +25,7 @@ import platform_img2 from '../img/platform/platform_img2.png';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
-import Header from '../components/Header'
+import Header from '../components/Header';
 
 function Home() {
 	const history = useHistory();
@@ -296,18 +294,6 @@ function Home() {
 				</div>
 				<div className="app__signupbtn">
 					<button onClick={loginroute}>SIGN IN</button>
-				</div>
-			</div>
-
-			<div id="contact" className="app__footer">
-				<div className="app__footerleft">
-					<img src={ideate_logo} alt="The Ideate Project Logo" />
-					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
-				</div>
-				<div className="app__footerright">
-					{/*<Link to="/Contact">Contact Us</Link>*/}
-					<Link to="/Privacy">Privacy Policy</Link>
-					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>
