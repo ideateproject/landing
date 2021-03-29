@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="app__footerright">
                 {/*<Link to="/Contact">Contact Us</Link>*/}
                 <Link to="/Privacy">Privacy Policy</Link>
-                <Link to="/Terms">Terms of Services</Link>
+                <Link to="/Terms">Terms and Conditions</Link>
             </div>
         </div>
     );

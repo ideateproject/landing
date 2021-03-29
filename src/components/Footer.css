@@ -22,14 +22,14 @@
 
 .app__footerright {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+    flex-flow: row wrap;
 	align-items: center;
 	width: 30%;
 }
 
-.app__footerright p {
-	font-size: 15px;
-	line-height: 20px;
+.app__footerright a:last-of-type {
+    margin-left: 10%;
 }
 
 button:hover {
