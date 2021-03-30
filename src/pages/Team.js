@@ -1,8 +1,5 @@
 import './Team.css';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import ideate_logo from '../img/vectors/ideate_logo.png';
 import jacob from '../img/team/jacob_dodd.png';
 import thomas from '../img/team/thomas_jankowski.png';
 import adam from '../img/team/adam_kier.png';
@@ -10,58 +7,15 @@ import matt from '../img/team/matt_liu.png';
 import chandler from '../img/team/chandler_malone.png';
 import tammy from '../img/team/tammy.png';
 import vector_left from '../img/vectors/vector_team.png';
+import NavBar from '../components/NavBar';
 
 function Team() {
-	const history = useHistory();
-
-	const loginroute = () => {
-		let path = `/login`;
-		history.push(path);
-	};
-
-	const homeroute = () => {
-		let path = `/`;
-		history.push(path);
-	};
-
 	window.scrollTo(0, 0);
 
 	return (
 		<div className="team">
 			<div className="team__header">
-				<div id="nav" className="team__navbar">
-					<ul className="team__navbarLeft">
-						<li>
-							<img
-								onClick={homeroute}
-								src={ideate_logo}
-								alt="The Ideate Project Logo"
-							/>
-						</li>
-						<li>
-							<a href="/#descriptions">For Students</a>
-						</li>
-						<li>
-							<a href="/#descriptions">For Universities</a>
-						</li>
-						<li>
-							<a href="/#descriptions">For Employers</a>
-						</li>
-					</ul>
-					<ul className="team__navbarRight">
-						<li>
-							<a href="/#about">About Us</a>
-						</li>
-						<li>
-							<a href="/#contact">Contact Us</a>
-						</li>
-						<li>
-							<button className="team__signinbtn" onClick={loginroute}>
-								SIGN IN
-							</button>
-						</li>
-					</ul>
-				</div>
+				<NavBar isHome={ false } />
 				<div className="team__title">
 					<p>Meet our team</p>
 				</div>
@@ -167,17 +121,6 @@ function Team() {
 						affecting positive change and enhancing the projects, programs and organizations 
 						she's affiliated with.	
 					</p>
-				</div>
-			</div>
-			<div className="team__footer">
-				<div className="team__footerleft">
-					<img src={ideate_logo} alt="The Ideate Project Logo" />
-					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
-				</div>
-				<div className="team__footerright">
-					{/*<Link to="/Contact">Contact Us</Link>*/}
-					<Link to="/Privacy">Privacy Policy</Link>
-					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>

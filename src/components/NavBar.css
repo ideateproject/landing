@@ -1,0 +1,106 @@
+.app__navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-top: 30px;
+	line-height: 20px;
+	background-color: transparent;
+}
+
+.home__nav {
+	background-color: rgba(24, 38, 55, .95);
+    position: fixed;
+	top: 0px;
+    z-index: 1000;
+	padding-bottom: 20px;
+}
+
+.app__navbar img:hover {
+	cursor: pointer;
+}
+
+.app__navbar li {
+	list-style: none;
+}
+
+.app__navbarLeft a,
+.app__navbarRight a {
+	font-size: 17px;
+	text-decoration: none;
+	color: #f4f4f4;
+	font-weight: 500;
+}
+
+.app__navbarLeft a:hover,
+.app__navbarRight a:hover {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+
+.app__navbarLeft a::after,
+.app__navbarRight a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #efaf45;
+	transition: width 0.3s;
+}
+
+.app__navbarLeft a:hover::after,
+.app__navbarRight a:hover::after {
+	width: 100%;
+}
+
+.app__navbarLeft {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	width: 70%;
+	padding-left: 20px;
+}
+
+.app__navbarLeft li {
+	padding-right: 5%;
+}
+
+.app__navbarLeft li:last-of-type {
+	padding: 0;
+}
+
+.app__navbarRight {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
+	width: 30%;
+	padding-right: 20px;
+}
+
+.app__navbarRight li:last-of-type {
+	margin-left: 10%;
+}
+
+.signin__btn {
+	background: #efaf45;
+	border-radius: 5px;
+	padding: 10px 25px;
+	color: white;
+	border: none;
+}
+
+.signin__btn a {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+/* mobile optimization, hiding nav bar when screen size is small */
+@media (max-width: 767px) {
+	.app__navbar {
+		display: none;
+	}
+}

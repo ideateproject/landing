@@ -1,18 +1,16 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import './Home.css';
-import ideate_logo from '../img/vectors/ideate_logo.png';
 import vector_left_up from '../img/vectors/Vector_1.png';
 import vector_left_down from '../img/vectors/Vector_2.png';
 import vector_right_up from '../img/vectors/Vector_3.png';
 import vector_right_down from '../img/vectors/Vector_4.png';
 import vector_middle_left from '../img/vectors/Vector_5.png';
 import vector_middle_right from '../img/vectors/Vector_6.png';
-import network from '../img/icons/network.png'
-import users from '../img/icons/users.png'
-import school from '../img/icons/school.png'
+import network from '../img/icons/network.png';
+import users from '../img/icons/users.png';
+import school from '../img/icons/school.png';
 import ellipse from '../img/vectors/Ellipse_1.png';
 import expand_arrow from '../img/vectors/expand_arrow.png';
 import rectangle from '../img/vectors/Rectangle.png';
@@ -24,9 +22,10 @@ import rectangle from '../img/vectors/Rectangle.png';
 // import tammy from '../img/team/tammy.png';
 import platform_img1 from '../img/platform/platform_img1.png';
 import platform_img2 from '../img/platform/platform_img2.png';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import NavBar from '../components/NavBar';
 
 function Home() {
 	const history = useHistory();
@@ -36,54 +35,10 @@ function Home() {
 		history.push(path);
 	};
 
-	// const teamroute = () => {
-	// 	let path = `/team#nav`;
-	// 	history.push(path);
-	// };
-
-	const homeroute = () => {
-		let path = `/`;
-		history.push(path);
-	};
-
 	return (
 		<div className="app">
 			<div className="app__heading">
-				<div id="nav" className="app__navbar">
-					<ul className="app__navbarLeft">
-						<li>
-							<a href="/#">
-								<img
-									onClick={homeroute}
-									src={ideate_logo}
-									alt="The Ideate Project Logo"
-								/>
-							</a>
-						</li>
-						<li>
-							<a href="#descriptions">For Individuals</a>
-						</li>
-						<li>
-							<a href="#descriptions">For Educators</a>
-						</li>
-						<li>
-							<a href="#descriptions">For Employers</a>
-						</li>
-					</ul>
-					<ul className="app__navbarRight">
-						<li>
-							<a href="#about">About Us</a>
-						</li>
-						{/*<li>
-							<a href="#contact">Contact Us</a>
-						</li>*/}
-						<li>
-							<button className="signin__btn" onClick={loginroute}>
-								SIGN IN
-							</button>
-						</li>
-					</ul>
-				</div>
+				<NavBar isHome={ true } />
 				{/* adding vector images */}
 				<img
 					src={vector_left_up}
@@ -338,18 +293,6 @@ function Home() {
 				</div>
 				<div className="app__signupbtn">
 					<button onClick={loginroute}>SIGN IN</button>
-				</div>
-			</div>
-
-			<div id="contact" className="app__footer">
-				<div className="app__footerleft">
-					<img src={ideate_logo} alt="The Ideate Project Logo" />
-					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
-				</div>
-				<div className="app__footerright">
-					{/*<Link to="/Contact">Contact Us</Link>*/}
-					<Link to="/Privacy">Privacy Policy</Link>
-					<Link to="/Terms">Terms of Services</Link>
 				</div>
 			</div>
 		</div>

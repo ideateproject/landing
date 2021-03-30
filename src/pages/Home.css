@@ -9,19 +9,6 @@
 	font-family: 'Lato', sans-serif;
 }
 
-.app__navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 20px 0px;
-	line-height: 20px;
-	position: fixed;
-	top: 0px;
-	background-color: rgba(24, 38, 55, .95);
-	z-index: 1000;
-}
-
 .center_image{
 	align-items: center;
 	text-align: center;
@@ -39,72 +26,9 @@
 	padding-top: 15%;	
 }
 
-.app__navbar img:hover {
-	cursor: pointer;
-}
-
-.app__navbar li {
-	list-style: none;
-}
-
-.main__button a,
-.signin__btn a{
+.main__button a {
 	color: white;
 	text-decoration: none;
-}
-
-.app__navbarLeft a,
-.app__navbarRight a {
-	font-size: 17px;
-	text-decoration: none;
-	color: #f4f4f4;
-	font-weight: 500;
-}
-
-.app__navbarLeft a::after,
-.app__navbarRight a::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 2px;
-	background: #efaf45;
-	transition: width 0.3s;
-}
-
-.app__navbarLeft a:hover::after,
-.app__navbarRight a:hover::after {
-	width: 100%;
-}
-
-.app__navbarLeft {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0;
-	width: 48%;
-	padding-left: 20px;
-}
-
-.app__navbarRight {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 0;
-	width: 15%; /*30%*/
-	padding-right: 20px;
-}
-
-.signin__btn {
-	background: #efaf45;
-	border-radius: 5px;
-	padding: 10px 25px;
-	color: white;
-	border: none;
-}
-
-.signin__btn a {
-	font-size: 14px;
-	font-weight: bold;
 }
 
 .app__name {
@@ -475,49 +399,8 @@
 	justify-content: center;
 }
 
-.app__footer {
-	background: #182637;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 10vw;
-	padding-top: 125px;
-	padding-bottom: 125px;
-	color: white;
-	font-family: 'Lato', sans-serif;
-}
-
-.app__footerleft img {
-	padding-bottom: 25px;
-}
-
-.app__footerleft p {
-	font-size: 15px;
-	line-height: 15px;
-}
-
-.app__footerright {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 15%; /*40%*/
-}
-
-.app__footerright p {
-	font-size: 15px;
-	line-height: 20px;
-}
-
 button:hover {
 	cursor: pointer;
-}
-
-.app__footer a {
-	color: white;
-}
-
-.app__footer a:hover {
-	color: #efaf45;
 }
 
 /*
@@ -531,7 +414,6 @@ screen size is small
    .vector_middle_right,
    .vector_right_down,
    .vector_right_up,
-   .app__navbar,
    .app__content,
    .app__team,
    .app__meetTheTeamButton,
