@@ -8,9 +8,9 @@ import vector_right_up from '../img/vectors/Vector_3.png';
 import vector_right_down from '../img/vectors/Vector_4.png';
 import vector_middle_left from '../img/vectors/Vector_5.png';
 import vector_middle_right from '../img/vectors/Vector_6.png';
-import network from '../img/icons/network.png'
-import users from '../img/icons/users.png'
-import school from '../img/icons/school.png'
+import network from '../img/icons/network.png';
+import users from '../img/icons/users.png';
+import school from '../img/icons/school.png';
 import ellipse from '../img/vectors/Ellipse_1.png';
 import expand_arrow from '../img/vectors/expand_arrow.png';
 import rectangle from '../img/vectors/Rectangle.png';
@@ -22,10 +22,10 @@ import rectangle from '../img/vectors/Rectangle.png';
 // import tammy from '../img/team/tammy.png';
 import platform_img1 from '../img/platform/platform_img1.png';
 import platform_img2 from '../img/platform/platform_img2.png';
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Container from 'react-bootstrap/Container'
-import Header from '../components/Header';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import NavBar from '../components/NavBar';
 
 function Home() {
 	const history = useHistory();
@@ -38,7 +38,7 @@ function Home() {
 	return (
 		<div className="app">
 			<div className="app__heading">
-				<Header isHome={ true } />
+				<NavBar isHome={ true } />
 				{/* adding vector images */}
 				<img
 					src={vector_left_up}

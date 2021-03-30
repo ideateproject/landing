@@ -1,10 +1,10 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import './Header.css'
+import './NavBar.css'
 import ideate_logo from '../img/vectors/ideate_logo.png';
 
-const Header = ({ isHome }) => {
+const NavBar = ({ isHome }) => {
     const history = useHistory();
 
 	const loginroute = () => {
@@ -61,4 +61,4 @@ const Header = ({ isHome }) => {
     )
 }
 
-export default Header
+export default NavBar

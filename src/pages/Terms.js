@@ -1,6 +1,6 @@
 import './Terms.css';
 import React from 'react';
-import Header from '../components/Header'
+import NavBar from '../components/NavBar'
 
 function Privacy() {
 	window.scrollTo(0, 0);
@@ -8,7 +8,7 @@ function Privacy() {
 	return (
 		<div className="terms">
 			<div className="terms__header">
-				<Header isHome={ false } />
+				<NavBar isHome={ false } />
 				<div className="terms__title">
 					<p>Terms and Conditions</p>
 				</div>

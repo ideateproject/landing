@@ -7,7 +7,7 @@ import matt from '../img/team/matt_liu.png';
 import chandler from '../img/team/chandler_malone.png';
 import tammy from '../img/team/tammy.png';
 import vector_left from '../img/vectors/vector_team.png';
-import Header from '../components/Header'
+import NavBar from '../components/NavBar';
 
 function Team() {
 	window.scrollTo(0, 0);
@@ -15,7 +15,7 @@ function Team() {
 	return (
 		<div className="team">
 			<div className="team__header">
-				<Header isHome={ false } />
+				<NavBar isHome={ false } />
 				<div className="team__title">
 					<p>Meet our team</p>
 				</div>

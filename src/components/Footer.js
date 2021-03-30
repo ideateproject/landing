@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Footer.css'
-import ideate_logo from '../img/vectors/ideate_logo.png'
+import './Footer.css';
+import ideate_logo from '../img/vectors/ideate_logo.png';
 
 const Footer = () => {
     return (

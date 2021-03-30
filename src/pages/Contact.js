@@ -1,13 +1,13 @@
 import './Contact.css';
 import React from 'react';
 import { Helmet } from "react-helmet";
-import Header from '../components/Header'
+import NavBar from '../components/NavBar';
 
 function Contact() {
 	return (
 		<div className="contact">
 			<div className="contact__header">
-				<Header isHome={ false } />
+				<NavBar isHome={ false } />
 				<div className="contact__title">
 					<p>Contact Us</p>
 				</div>

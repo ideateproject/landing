@@ -1,6 +1,6 @@
 import './Privacy.css';
 import React from 'react';
-import Header from '../components/Header';
+import NavBar from '../components/NavBar';
 
 function Privacy() {
 	window.scrollTo(0, 0);
@@ -8,7 +8,7 @@ function Privacy() {
 	return (
 		<div className="privacy">
 			<div className="privacy__header">
-				<Header isHome={ false } />
+				<NavBar isHome={ false } />
 				<div className="privacy__title">
 					<p>Privacy Policy</p>
 				</div>
