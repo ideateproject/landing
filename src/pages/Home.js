@@ -109,8 +109,7 @@ function Home() {
 				<div className="app__name">
 					<p className="main__title">The Ideate Project</p>
 					<p className="top__main__tagline">
-						Ideate bridges the talent gap in the technology industry by providing access
-					  <p>to internships, jobs, and funding opportunities to underrepresented individuals in tech.</p>
+					Level up in tech with Ideate
 					   </p>
 					
 					<div className="main__button">
