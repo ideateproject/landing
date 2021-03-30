@@ -1,60 +1,14 @@
 import './Privacy.css';
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom';
-import ideate_logo from '../img/vectors/ideate_logo.png';
+import NavBar from '../components/NavBar';
 
 function Privacy() {
-	const history = useHistory();
-
-	const loginroute = () => {
-		let path = `/login`;
-		history.push(path);
-	};
-
-	const homeroute = () => {
-		let path = `/`;
-		history.push(path);
-	};
-
 	window.scrollTo(0, 0);
 
 	return (
 		<div className="privacy">
 			<div className="privacy__header">
-				<div id="nav" className="privacy__navbar">
-					<ul className="privacy__navbarLeft">
-						<li>
-							<img
-								onClick={homeroute}
-								src={ideate_logo}
-								alt="The Ideate Project Logo"
-							/>
-						</li>
-						<li>
-							<a href="/#descriptions">For Students</a>
-						</li>
-						<li>
-							<a href="/#descriptions">For Universities</a>
-						</li>
-						<li>
-							<a href="/#descriptions">For Employers</a>
-						</li>
-					</ul>
-					<ul className="privacy__navbarRight">
-						<li>
-							<a href="/#about">About Us</a>
-						</li>
-						{/*<li>
-							<a href="/#contact">Contact Us</a>
-						</li>*/}
-						<li>
-							<button className="privacy__signinbtn" onClick={loginroute}>
-								SIGN IN
-							</button>
-						</li>
-					</ul>
-				</div>
+				<NavBar isHome={ false } />
 				<div className="privacy__title">
 					<p>Privacy Policy</p>
 				</div>
@@ -540,17 +494,6 @@ function Privacy() {
 					<li>By email: support@ideateproject.com</li>
 				</ul>
 
-			</div>
-			<div className="privacy__footer">
-				<div className="privacy__footerleft">
-					<img src={ideate_logo} alt="The Ideate Project Logo" />
-					<p>Copyright © 2021 Ideate Project. All rights reserved.</p>
-				</div>
-				<div className="privacy__footerright">
-					{/*<Link to="/Contact">Contact Us</Link>*/}
-					<Link to="/Privacy">Privacy Policy</Link>
-					<Link to="/Terms">Terms of Services</Link>
-				</div>
 			</div>
 		</div>
 	);
